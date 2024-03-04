@@ -1,0 +1,18 @@
+{% if swagger_file %}
+<p> Uploaded {{swagger_file}} as Swagger file input !!</p>
+{% endif %}
+
+{% if bug_count %}
+
+    <ul>
+        {% for bug in bug_details %}
+            <li>
+                <p>Method: {{bug.method}}, URI: {{bug.end_point}} </p>
+                <p>Failure: {{bug.failure}}</p>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% else %}
+    <p> No bugs were found by fuzzer. </p>
+{% endif %}
