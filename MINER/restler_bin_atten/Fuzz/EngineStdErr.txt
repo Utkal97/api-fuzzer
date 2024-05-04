@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/MINER/attentionmodel_group/attention.py", line 343, in <module>
+    train_index, val_index = train_test_split(np.arange(len(traindata)), test_size=0.2, random_state=33)
+  File "/home/seed/.local/lib/python3.8/site-packages/sklearn/model_selection/_split.py", line 2175, in train_test_split
+    n_train, n_test = _validate_shuffle_split(n_samples, test_size, train_size,
+  File "/home/seed/.local/lib/python3.8/site-packages/sklearn/model_selection/_split.py", line 1857, in _validate_shuffle_split
+    raise ValueError(
+ValueError: With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.
+Traceback (most recent call last):
+  File "/home/MINER/attentionmodel_group/generation.py", line 173, in <module>
+    decoder = model.decoder
+NameError: name 'model' is not defined

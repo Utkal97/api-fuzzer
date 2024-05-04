@@ -1,0 +1,140 @@
+[5/4/2024 12:59:09 PM] Generating grammar...
+[5/4/2024 12:59:09 PM] Getting requests...
+[5/4/2024 12:59:10 PM] Getting dependencies...
+[5/4/2024 12:59:10 PM] Getting path consumers...
+[5/4/2024 12:59:10 PM] Getting query consumers...
+[5/4/2024 12:59:10 PM] Getting header consumers...
+[5/4/2024 12:59:10 PM] Getting body consumers...
+[5/4/2024 12:59:10 PM] Getting producers...
+[5/4/2024 12:59:10 PM] Done processing producers
+[5/4/2024 12:59:10 PM] Compute dependencies
+[[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product"
+  xMsPath = None
+  method = Post }
+[[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/products"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/products"
+  xMsPath = None
+  method = Get }
+5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Get }
+5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Get }
+[[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/products"
+  xMsPath = None
+  method = Get }
+5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/products"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/products"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Put }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Put }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/products"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Put }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Put }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/products"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/products"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Put }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Put }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Put }
+[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
+  xMsPath = None
+  method = Put }
+[5/4/2024 12:59:10 PM] Assigning equality constraints...
+[5/4/2024 12:59:10 PM] Getting ordering constraints...
+[5/4/2024 12:59:10 PM] Dependency analysis completed.
+[5/4/2024 12:59:10 PM] Generating request primitives...
+Writing new dictionary to C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\MINER\restler_bin_atten\Compile\dict.json
+[5/4/2024 12:59:10 PM] Generating python grammar...
+[5/4/2024 12:59:10 PM] Get requests
+[5/4/2024 12:59:10 PM] Done get requests
+[5/4/2024 12:59:10 PM] Done generating python grammar.
+Workflow completed.  See C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\MINER\restler_bin_atten\Compile for REST-ler grammar.

@@ -1,0 +1,218 @@
+Random seed: 12345
+Setting fuzzing schemes: directed-smoke-test
+2024-03-05 12:47:34.003: Going to fuzz a set with 6 requests
+2024-03-05 12:47:34.003: Request-0: Value Combinations: 2
+2024-03-05 12:47:34.003: Request-1: Value Combinations: 2
+2024-03-05 12:47:34.003: Request-2: Value Combinations: 8
+2024-03-05 12:47:34.003: Request-3: Value Combinations: 3
+2024-03-05 12:47:34.003: Request-4: Value Combinations: 2
+2024-03-05 12:47:34.003: Request-5: Value Combinations: 2
+2024-03-05 12:47:34.003: Avg. Value Combinations per Request: 3.1666666666666665
+2024-03-05 12:47:34.003: Median Value Combinations per Request: 2.0
+2024-03-05 12:47:34.003: Min Value Combinations per Request: 2
+2024-03-05 12:47:34.003: Max Value Combinations per Request: 8
+2024-03-05 12:47:34.003: Total dependencies: 6
+
+2024-03-05 12:47:34.003: Generation: 1 / Sequences Collection Size: 3 
+(After directed-smoke-test Extend)
+
+Rendering request 0 from scratch
+
+2024-03-05 12:47:34.123: Request 0
+2024-03-05 12:47:34.123: Endpoint - /api/blog/posts
+2024-03-05 12:47:34.123: Hex Def - 1950cbddab7726489624c3d346d3426561c921ad
+2024-03-05 12:47:34.123: Sequence length that satisfies dependencies: 1
+2024-03-05 12:47:34.123: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '?'
+		- restler_static_string: 'page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: '&'
+		- restler_static_string: 'per_page='
+		- restler_fuzzable_int: '1'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Rendering request 1 from scratch
+
+2024-03-05 12:47:34.435: Request 1
+2024-03-05 12:47:34.435: Endpoint - /api/blog/posts
+2024-03-05 12:47:34.435: Hex Def - 4fc287fccdb64d22a7d070386dacdde9207540d0
+2024-03-05 12:47:34.435: Sequence length that satisfies dependencies: 1
+2024-03-05 12:47:34.435: Rendering INVALID
+		- restler_static_string: 'POST '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		+ restler_fuzzable_int: ['99', '1']
+		- restler_static_string: ',\n    "body":'
+		+ restler_fuzzable_string: ['"my first blog post"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Rendering request 2 from scratch
+
+2024-03-05 12:47:34.509: Request 2
+2024-03-05 12:47:34.509: Endpoint - /api/doc
+2024-03-05 12:47:34.509: Hex Def - b6c2efcdc1799e1e6a48374d29a3c2b594bea52c
+2024-03-05 12:47:34.509: Sequence length that satisfies dependencies: 1
+2024-03-05 12:47:34.509: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'doc'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+2024-03-05 12:47:34.509: Generation: 1 / Sequences Collection Size: 0 
+(After directed-smoke-test Render)
+
+2024-03-05 12:47:34.509: Final Swagger spec coverage: 0 / 6
+2024-03-05 12:47:34.509: Rendered requests: 3 / 6
+2024-03-05 12:47:34.509: Rendered requests with "valid" status codes: 0 / 3
+2024-03-05 12:47:34.509: Num fully valid requests (no resource creation failures): 0
+2024-03-05 12:47:34.509: Num requests not rendered due to invalid sequence re-renders: 0
+2024-03-05 12:47:34.509: Num invalid requests caused by failed resource creations: 0
+2024-03-05 12:47:34.509: Total Creations of Dyn Objects: 0
+2024-03-05 12:47:34.509: Total Requests Sent: {'gc': 0, 'main_driver': 12}
+2024-03-05 12:47:34.509: Bug Buckets: {}
+2024-03-05 12:47:34.517: Generation: 2 / Sequences Collection Size: 3 
+(After directed-smoke-test Extend)
+
+Found a matching prefix of length 1 for request 3 with previous request 1
+	but that prefix was INVALID (root = 1)
+
+2024-03-05 12:47:34.525: Request 3
+2024-03-05 12:47:34.525: Endpoint - /api/blog/posts/{postId}
+2024-03-05 12:47:34.525: Hex Def - 3cdc49380f5bafe726c625d93ca3d38d271808f5
+2024-03-05 12:47:34.525: Sequence length that satisfies dependencies: 2
+2024-03-05 12:47:34.525: Rendering INVALID
+		- restler_static_string: 'GET '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM_api_blog_posts_post_id_READER_DELIM'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 4 with previous request 1
+	but that prefix was INVALID (root = 1)
+
+2024-03-05 12:47:34.533: Request 4
+2024-03-05 12:47:34.533: Endpoint - /api/blog/posts/{postId}
+2024-03-05 12:47:34.533: Hex Def - 67e6114625784b6f417b8bf1b54f2785f3877ab6
+2024-03-05 12:47:34.533: Sequence length that satisfies dependencies: 2
+2024-03-05 12:47:34.533: Rendering INVALID
+		- restler_static_string: 'PUT '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM_api_blog_posts_post_id_READER_DELIM'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		- restler_static_string: 'Content-Type: '
+		- restler_static_string: 'application/json'
+		- restler_static_string: '\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+		- restler_static_string: '{'
+		- restler_static_string: '\n    "id":'
+		- restler_static_string: '_READER_DELIM_api_blog_posts_post_id_READER_DELIM'
+		- restler_static_string: ',\n    "body":'
+		- restler_static_string: '"_READER_DELIM_api_blog_posts_post_body_READER_DELIM"'
+		- restler_static_string: ',\n    "checksum":'
+		+ restler_fuzzable_string: ['"abcde"', '"fuzzstring"']
+		- restler_static_string: '}'
+		- restler_static_string: '\r\n'
+
+Found a matching prefix of length 1 for request 5 with previous request 1
+	but that prefix was INVALID (root = 1)
+
+2024-03-05 12:47:34.541: Request 5
+2024-03-05 12:47:34.541: Endpoint - /api/blog/posts/{postId}
+2024-03-05 12:47:34.541: Hex Def - 78e06fccfed50bd52918df57068206e977b23d96
+2024-03-05 12:47:34.541: Sequence length that satisfies dependencies: 2
+2024-03-05 12:47:34.541: Rendering INVALID
+		- restler_static_string: 'DELETE '
+		- restler_static_string: ''
+		- restler_static_string: '/'
+		- restler_static_string: 'api'
+		- restler_static_string: '/'
+		- restler_static_string: 'blog'
+		- restler_static_string: '/'
+		- restler_static_string: 'posts'
+		- restler_static_string: '/'
+		- restler_static_string: '_READER_DELIM_api_blog_posts_post_id_READER_DELIM'
+		- restler_static_string: ' HTTP/1.1\r\n'
+		- restler_static_string: 'Accept: application/json\r\n'
+		- restler_static_string: 'Host: localhost:8888\r\n'
+		+ restler_refreshable_authentication_token: ['token_auth_method', 'token_refresh_interval']
+		- restler_static_string: '\r\n'
+
+2024-03-05 12:47:34.541: Generation: 2 / Sequences Collection Size: 0 
+(After directed-smoke-test Render)
+
+2024-03-05 12:47:34.541: Final Swagger spec coverage: 0 / 6
+2024-03-05 12:47:34.541: Rendered requests: 3 / 6
+2024-03-05 12:47:34.541: Rendered requests with "valid" status codes: 0 / 3
+2024-03-05 12:47:34.541: Num fully valid requests (no resource creation failures): 0
+2024-03-05 12:47:34.541: Num requests not rendered due to invalid sequence re-renders: 0
+2024-03-05 12:47:34.541: Num invalid requests caused by failed resource creations: 0
+2024-03-05 12:47:34.541: Total Creations of Dyn Objects: 0
+2024-03-05 12:47:34.541: Total Requests Sent: {'gc': 0, 'main_driver': 12}
+2024-03-05 12:47:34.541: Bug Buckets: {}
+
+Testing completed -- below are the final stats:
+
+2024-03-05 12:47:34.557: Final Swagger spec coverage: 0 / 6
+2024-03-05 12:47:34.557: Rendered requests: 3 / 6
+2024-03-05 12:47:34.557: Rendered requests with "valid" status codes: 0 / 3
+2024-03-05 12:47:34.557: Num fully valid requests (no resource creation failures): 0
+2024-03-05 12:47:34.557: Num requests not rendered due to invalid sequence re-renders: 0
+2024-03-05 12:47:34.557: Num invalid requests caused by failed resource creations: 0
+2024-03-05 12:47:34.557: Total Creations of Dyn Objects: 0
+2024-03-05 12:47:34.557: Total Requests Sent: {'gc': 0, 'main_driver': 12}
+2024-03-05 12:47:34.557: Bug Buckets: {}

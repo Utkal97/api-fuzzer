@@ -1,0 +1,10 @@
+POST /Feedback
+	StructMissing_/feedbackType/entityId
+	{'feedback': 'fuzzstring'}
+
+	StructMissing_/feedback/entityId
+	{'feedbackType': 'General'}
+
+	InvalidJson
+	{'id': '0367baf3-1cb6-4baf-bede-48e17e1cd005', 'name': 'gryffindor', 'housecolours': 'scarlet and gold', 'founder': 'godric gryffindor', 'animal': 'lion', 'element': 'fire', 'ghost': 'nearly-headless nick', 'commonroom': 'gryffindor tower', 'heads': [{'id': '530da97d-5a83-4ea6-bc15-790edf5b5efc', 'firstname': 'minerva', 'lastname': 'mcgonagall'}, {'id': '9915c5f8-9177-4f63-bba8-d04387a404f9', 'firstname': 'godric', 'lastname': 'gryffindor'}], 'traits': [{'id': '1773bce8-7a22-4d57-b8e1-7e1cbe26fa2b', 'name': 'courage'}, {'id': '21f22e43-efd9-4a43-87f5-eab5fb1666ea', 'name': 'chivalary'}, {'id': '60d8f5d0-de4b-41f7-b152-40543555bf3a', 'name': 'nerve'}, {'id': '68f73efc-fae9-4a54-b3e2-04bbe72f5d63', 'name': 'daring'}, {'id': '7e6d321d-fe7d-4c05-8ad7-ddabda83d8cd', 'name': 'determination'}, {'id': 'adf83e9f-859b-41c4-947d-b359a05f8f3c', 'name': 'bravery'}]}
+

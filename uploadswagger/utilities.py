@@ -1,4 +1,4 @@
-
+import re
 def filterAndGroupLines(lines):
     groupedLines = []
 
@@ -22,7 +22,11 @@ def filterAndGroupLines(lines):
 def parseChecker(filename=""):
 
     # Remove this filepath and call the function with required filepath
-    filename = "../media/example_files/DataDrivenChecker_20x_1.txt"
+    # filename = "../media/example_files/DataDrivenChecker_20x_1.txt"
+    f = open(filename, "r")
+    match = re.match(r'^[^_]*', filename)
+    if match:
+        checkerName = match.group(0)
     f = open(filename, "r")
 
     try:
@@ -48,7 +52,8 @@ def parseChecker(filename=""):
                 'httpMethod': endPointHttpMethod,
                 'endPoint': endPoint, 
                 'statusCode': responseCode, 
-                'response': responseValue
+                'response': responseValue,
+                'checker': checkerName
                 }
 
             errors.append(error)

@@ -1,0 +1,274 @@
+This file contains the failing requests, ordered by the number of blocked dependent requests.
+To improve coverage, fix the failing requests in the order listed in this file.
+
+Note: some requests are labeled as 'sequence failure'.
+This means the request depends on another request that is failing intermittently.
+For example, a DELETE request for a resource may be skipped because the resource
+PUT request failed due to exceeding quota.  The same PUT request succeeded earlier (and may
+succeed later depending on the resource clean-up behavior in the service), so it is
+considered an intermittent failure.
+
+-----------------------------------------------
+Request: Post /event-registry-repository/deployments
+Number of blocked dependent requests: 5
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /flowable-rest/event-registry-api/event-registry-repository/deployments?category=fuzzstring&deploymentName=fuzzstring&tenantId=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:31 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/deployments?category=fuzzstring&deploymentName=fuzzstring&tenantId=fuzzstring\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /flowable-rest/event-registry-api/event-registry-repository/deployments HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:31 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/deployments\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Get /event-registry-management/engine
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-management/engine HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:31 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-management/engine\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-management/engine HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:31 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-management/engine\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Get /event-registry-repository/channel-definitions/{channelDefinitionId}
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:32 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:32 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Get /event-registry-repository/event-definitions
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&sort=name HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:32 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&sort=name\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&sort=id HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:32 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&sort=id\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&sort=key HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:32 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&sort=key\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 4 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&sort=category HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:33 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&sort=category\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 5 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&sort=deploymentId HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:33 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&sort=deploymentId\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Get /event-registry-repository/event-definitions/{eventDefinitionId}/resourcedata
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring/resourcedata HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:33 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring/resourcedata\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring/resourcedata HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:34 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring/resourcedata\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Get /event-registry-repository/channel-definitions/{channelDefinitionId}/resourcedata
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring/resourcedata HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:34 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring/resourcedata\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring/resourcedata HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:34 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring/resourcedata\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Get /event-registry-repository/deployments
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/deployments?name=fuzzstring&nameLike=fuzzstring&category=fuzzstring&categoryNotEquals=fuzzstring&parentDeploymentId=fuzzstring&parentDeploymentIdLike=fuzzstring&tenantIdLike=fuzzstring&tenantId=fuzzstring&withoutTenantId=true&sort=id HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:34 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/deployments?name=fuzzstring&nameLike=fuzzstring&category=fuzzstring&categoryNotEquals=fuzzstring&parentDeploymentId=fuzzstring&parentDeploymentIdLike=fuzzstring&tenantIdLike=fuzzstring&tenantId=fuzzstring&withoutTenantId=true&sort=id\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/deployments?name=fuzzstring&nameLike=fuzzstring&category=fuzzstring&categoryNotEquals=fuzzstring&parentDeploymentId=fuzzstring&parentDeploymentIdLike=fuzzstring&tenantIdLike=fuzzstring&tenantId=fuzzstring&withoutTenantId=true&sort=name HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:34 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/deployments?name=fuzzstring&nameLike=fuzzstring&category=fuzzstring&categoryNotEquals=fuzzstring&parentDeploymentId=fuzzstring&parentDeploymentIdLike=fuzzstring&tenantIdLike=fuzzstring&tenantId=fuzzstring&withoutTenantId=true&sort=name\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/deployments?name=fuzzstring&nameLike=fuzzstring&category=fuzzstring&categoryNotEquals=fuzzstring&parentDeploymentId=fuzzstring&parentDeploymentIdLike=fuzzstring&tenantIdLike=fuzzstring&tenantId=fuzzstring&withoutTenantId=true&sort=deployTime HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:35 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/deployments?name=fuzzstring&nameLike=fuzzstring&category=fuzzstring&categoryNotEquals=fuzzstring&parentDeploymentId=fuzzstring&parentDeploymentIdLike=fuzzstring&tenantIdLike=fuzzstring&tenantId=fuzzstring&withoutTenantId=true&sort=deployTime\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 4 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/deployments?name=fuzzstring&nameLike=fuzzstring&category=fuzzstring&categoryNotEquals=fuzzstring&parentDeploymentId=fuzzstring&parentDeploymentIdLike=fuzzstring&tenantIdLike=fuzzstring&tenantId=fuzzstring&withoutTenantId=true&sort=tenantId HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:35 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/deployments?name=fuzzstring&nameLike=fuzzstring&category=fuzzstring&categoryNotEquals=fuzzstring&parentDeploymentId=fuzzstring&parentDeploymentIdLike=fuzzstring&tenantIdLike=fuzzstring&tenantId=fuzzstring&withoutTenantId=true&sort=tenantId\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 5 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/deployments HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:35 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/deployments\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Post /event-registry-runtime/event-instances
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> POST /flowable-rest/event-registry-api/event-registry-runtime/event-instances HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\nContent-Type: application/json\r\n\r\n{\n    "eventDefinitionId":"oneEvent:1:158",\n    "eventDefinitionKey":"oneEvent",\n    "channelDefinitionId":"myChannel:1:123",\n    "channelDefinitionKey":"myChannel",\n    "eventPayload":\n        {\n            "nodeType":"ARRAY",\n            "array":true,\n            "null":true,\n            "float":true,\n            "number":true,\n            "object":true,\n            "pojo":true,\n            "short":true,\n            "int":true,\n            "long":true,\n            "double":true,\n            "textual":true,\n            "boolean":true,\n            "binary":true,\n            "valueNode":true,\n            "containerNode":true,\n            "missingNode":true,\n            "integralNumber":true,\n            "floatingPointNumber":true,\n            "bigDecimal":true,\n            "bigInteger":true\n        }\n    ,\n    "tenantId":"tenant1"}\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:35 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-runtime/event-instances\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> POST /flowable-rest/event-registry-api/event-registry-runtime/event-instances HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\nContent-Type: application/json\r\n\r\n{\n    "eventDefinitionId":"oneEvent:1:158",\n    "eventDefinitionKey":"oneEvent",\n    "channelDefinitionId":"myChannel:1:123",\n    "channelDefinitionKey":"myChannel",\n    "eventPayload":\n        {\n            "nodeType":"ARRAY",\n            "array":true,\n            "null":true,\n            "float":true,\n            "number":true,\n            "object":true,\n            "pojo":true,\n            "short":true,\n            "int":true,\n            "long":true,\n            "double":true,\n            "textual":true,\n            "boolean":true,\n            "binary":true,\n            "valueNode":true,\n            "containerNode":true,\n            "missingNode":true,\n            "integralNumber":true,\n            "floatingPointNumber":true,\n            "bigDecimal":true,\n            "bigInteger":true\n        }\n    ,\n    "tenantId":"fuzzstring"}\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:35 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-runtime/event-instances\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> POST /flowable-rest/event-registry-api/event-registry-runtime/event-instances HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\nContent-Type: application/json\r\n\r\n{\n    "eventDefinitionId":"oneEvent:1:158",\n    "eventDefinitionKey":"oneEvent",\n    "channelDefinitionId":"myChannel:1:123",\n    "channelDefinitionKey":"myChannel",\n    "eventPayload":\n        {\n            "nodeType":"BINARY",\n            "array":true,\n            "null":true,\n            "float":true,\n            "number":true,\n            "object":true,\n            "pojo":true,\n            "short":true,\n            "int":true,\n            "long":true,\n            "double":true,\n            "textual":true,\n            "boolean":true,\n            "binary":true,\n            "valueNode":true,\n            "containerNode":true,\n            "missingNode":true,\n            "integralNumber":true,\n            "floatingPointNumber":true,\n            "bigDecimal":true,\n            "bigInteger":true\n        }\n    ,\n    "tenantId":"tenant1"}\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:36 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-runtime/event-instances\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 4 +++:
+	Request sequence: 
+	> POST /flowable-rest/event-registry-api/event-registry-runtime/event-instances HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\nContent-Type: application/json\r\n\r\n{\n    "eventDefinitionId":"oneEvent:1:158",\n    "eventDefinitionKey":"oneEvent",\n    "channelDefinitionId":"myChannel:1:123",\n    "channelDefinitionKey":"myChannel",\n    "eventPayload":\n        {\n            "nodeType":"BINARY",\n            "array":true,\n            "null":true,\n            "float":true,\n            "number":true,\n            "object":true,\n            "pojo":true,\n            "short":true,\n            "int":true,\n            "long":true,\n            "double":true,\n            "textual":true,\n            "boolean":true,\n            "binary":true,\n            "valueNode":true,\n            "containerNode":true,\n            "missingNode":true,\n            "integralNumber":true,\n            "floatingPointNumber":true,\n            "bigDecimal":true,\n            "bigInteger":true\n        }\n    ,\n    "tenantId":"fuzzstring"}\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:36 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-runtime/event-instances\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 5 +++:
+	Request sequence: 
+	> POST /flowable-rest/event-registry-api/event-registry-runtime/event-instances HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\nContent-Type: application/json\r\n\r\n{\n    "eventDefinitionId":"oneEvent:1:158",\n    "eventDefinitionKey":"oneEvent",\n    "channelDefinitionId":"myChannel:1:123",\n    "channelDefinitionKey":"myChannel",\n    "eventPayload":\n        {\n            "nodeType":"BOOLEAN",\n            "array":true,\n            "null":true,\n            "float":true,\n            "number":true,\n            "object":true,\n            "pojo":true,\n            "short":true,\n            "int":true,\n            "long":true,\n            "double":true,\n            "textual":true,\n            "boolean":true,\n            "binary":true,\n            "valueNode":true,\n            "containerNode":true,\n            "missingNode":true,\n            "integralNumber":true,\n            "floatingPointNumber":true,\n            "bigDecimal":true,\n            "bigInteger":true\n        }\n    ,\n    "tenantId":"tenant1"}\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:36 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-runtime/event-instances\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Get /event-registry-repository/event-definitions/{eventDefinitionId}/model
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring/model HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:39 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring/model\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring/model HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:39 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring/model\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Get /event-registry-repository/channel-definitions/{channelDefinitionId}/model
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring/model HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:40 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring/model\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring/model HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:40 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions/fuzzstring/model\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Get /event-registry-repository/channel-definitions
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&createTime=%7B+%22fuzz%22%3A+false+%7D&createTimeAfter=%7B+%22fuzz%22%3A+false+%7D&createTimeBefore=%7B+%22fuzz%22%3A+false+%7D&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&onlyInbound=true&onlyOutbound=true&implementation=fuzzstring&sort=name HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:40 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&createTime=%7B+%22fuzz%22%3A+false+%7D&createTimeAfter=%7B+%22fuzz%22%3A+false+%7D&createTimeBefore=%7B+%22fuzz%22%3A+false+%7D&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&onlyInbound=true&onlyOutbound=true&implementation=fuzzstring&sort=name\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&createTime=%7B+%22fuzz%22%3A+false+%7D&createTimeAfter=%7B+%22fuzz%22%3A+false+%7D&createTimeBefore=%7B+%22fuzz%22%3A+false+%7D&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&onlyInbound=true&onlyOutbound=true&implementation=fuzzstring&sort=id HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:40 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&createTime=%7B+%22fuzz%22%3A+false+%7D&createTimeAfter=%7B+%22fuzz%22%3A+false+%7D&createTimeBefore=%7B+%22fuzz%22%3A+false+%7D&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&onlyInbound=true&onlyOutbound=true&implementation=fuzzstring&sort=id\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 3 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&createTime=%7B+%22fuzz%22%3A+false+%7D&createTimeAfter=%7B+%22fuzz%22%3A+false+%7D&createTimeBefore=%7B+%22fuzz%22%3A+false+%7D&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&onlyInbound=true&onlyOutbound=true&implementation=fuzzstring&sort=key HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:40 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&createTime=%7B+%22fuzz%22%3A+false+%7D&createTimeAfter=%7B+%22fuzz%22%3A+false+%7D&createTimeBefore=%7B+%22fuzz%22%3A+false+%7D&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&onlyInbound=true&onlyOutbound=true&implementation=fuzzstring&sort=key\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 4 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&createTime=%7B+%22fuzz%22%3A+false+%7D&createTimeAfter=%7B+%22fuzz%22%3A+false+%7D&createTimeBefore=%7B+%22fuzz%22%3A+false+%7D&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&onlyInbound=true&onlyOutbound=true&implementation=fuzzstring&sort=category HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:41 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&createTime=%7B+%22fuzz%22%3A+false+%7D&createTimeAfter=%7B+%22fuzz%22%3A+false+%7D&createTimeBefore=%7B+%22fuzz%22%3A+false+%7D&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&onlyInbound=true&onlyOutbound=true&implementation=fuzzstring&sort=category\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 5 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/channel-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&createTime=%7B+%22fuzz%22%3A+false+%7D&createTimeAfter=%7B+%22fuzz%22%3A+false+%7D&createTimeBefore=%7B+%22fuzz%22%3A+false+%7D&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&onlyInbound=true&onlyOutbound=true&implementation=fuzzstring&sort=deploymentId HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:41 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/channel-definitions?version=1&name=fuzzstring&nameLike=fuzzstring&nameLikeIgnoreCase=fuzzstring&key=fuzzstring&keyLike=fuzzstring&keyLikeIgnoreCase=fuzzstring&createTime=%7B+%22fuzz%22%3A+false+%7D&createTimeAfter=%7B+%22fuzz%22%3A+false+%7D&createTimeBefore=%7B+%22fuzz%22%3A+false+%7D&resourceName=fuzzstring&resourceNameLike=fuzzstring&category=fuzzstring&categoryLike=fuzzstring&categoryNotEquals=fuzzstring&deploymentId=fuzzstring&parentDeploymentId=fuzzstring&latest=true&onlyInbound=true&onlyOutbound=true&implementation=fuzzstring&sort=deploymentId\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+-----------------------------------------------
+Request: Get /event-registry-repository/event-definitions/{eventDefinitionId}
+Number of blocked dependent requests: 0
+
+	+++ Combination 1 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:42 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+
+	+++ Combination 2 +++:
+	Request sequence: 
+	> GET /flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: developer-docs.flowable.com\r\n\r\n
+	< HTTP/1.1 308 Permanent Redirect\r\nDate: Sat, 04 May 2024 17:03:42 GMT\r\nContent-Type: text/html\r\nContent-Length: 164\r\nConnection: keep-alive\r\nLocation: https://developer-docs.flowable.com/flowable-rest/event-registry-api/event-registry-repository/event-definitions/fuzzstring\r\n\r\n<html>\r\n<head><title>308 Permanent Redirect</title></head>\r\n<body>\r\n<center><h1>308 Permanent Redirect</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n
+
+

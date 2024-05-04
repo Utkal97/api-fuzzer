@@ -1,0 +1,43 @@
+Unhandled exception. System.Exception: Unexpected response without prior request at 4/22/2024 10:29:07 PM: { version = "HTTP/1.1"
+  statusCode = 502
+  statusDescription = "Bad Gateway"
+  headers =
+           map
+             [("Connection", "keep-alive"); ("Content-Length", "45");
+              ("Content-Type", "application/problem+json; charset=utf-8");
+              ("Date", "Tue, 23 Apr 2024 02:29:07 GMT");
+              ("Nel",
+               "{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}");
+              ("Report-To",
+               "{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713839347&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=r0MPCe45k9eGv5b0mrdqQpNSutQvdBAo8%2FmlbufAuy4%3D"}]}");
+              ("Reporting-Endpoints",
+               "heroku-nel=https://nel.heroku.com/reports?ts=1713839347&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=r0MPCe45k9eGv5b0mrdqQpNSutQvdBAo8%2FmlbufAuy4%3D");
+              ("Server", "Kestrel"); ("Via", "1.1 vegur")]
+  body = "{"title":"Email service failed","status":502}" }
+   at Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringThenFail@1639.Invoke(String message) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\printf.fs:line 1639
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.choose@171.System-Collections-IEnumerator-MoveNext() in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 179
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.map@75.DoMoveNext(b& curr) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 77
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.MapEnumerator`1.System-Collections-IEnumerator-MoveNext() in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 64
+   at Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers.takeInner@266[T,TResult](ConcatEnumerator`2 x, Unit unitVar0) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seqcore.fs:line 268
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.map@75.DoMoveNext(b& curr) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 77
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.MapEnumerator`1.System-Collections-IEnumerator-MoveNext() in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 64
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.map@75.DoMoveNext(b& curr) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 77
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.MapEnumerator`1.System-Collections-IEnumerator-MoveNext() in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 64
+   at Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers.takeInner@266[T,TResult](ConcatEnumerator`2 x, Unit unitVar0) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seqcore.fs:line 268
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.next@193[T](FSharpFunc`2 f, IEnumerator`1 e, FSharpRef`1 started, Unit unitVar0) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 194
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.filter@188.System-Collections-IEnumerator-MoveNext() in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 196
+   at Microsoft.FSharp.Collections.SeqModule.oneStepTo@987[T](IEnumerable`1 source, List`1 prefix, FSharpRef`1 enumeratorR, Int32 i) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 996
+   at Microsoft.FSharp.Collections.SeqModule.action@4164-1[T](IEnumerable`1 source, List`1 prefix, FSharpRef`1 enumeratorR, Int32 i, Unit unitVar0) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 1011
+   at Microsoft.FSharp.Collections.SeqModule.result@1003.Invoke(Int32 i)
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.unfold@205.DoMoveNext(b& curr) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 207
+   at Microsoft.FSharp.Collections.Internal.IEnumerator.MapEnumerator`1.System-Collections-IEnumerator-MoveNext() in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 64
+   at Microsoft.FSharp.Collections.SeqModule.Iterate[T](FSharpFunc`2 action, IEnumerable`1 source) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 496
+   at Microsoft.FSharp.Collections.SeqModule.groupByValueType[T,TKey](FSharpFunc`2 keyf, IEnumerable`1 seq) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 1068
+   at Microsoft.FSharp.Collections.SeqModule.GroupBy@1076.Invoke(Unit unitVar0) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 1076
+   at Microsoft.FSharp.Collections.SeqModule.mkDelayedSeq@471.Invoke(Unit unitVar0) in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seq.fs:line 471
+   at Restler.ResultsAnalyzer.Analyze.Buckets.getBuckets@98.GenerateNext(IEnumerable`1& next) in /home/restler-fuzzer/src/ResultsAnalyzer/Analyze/Buckets.fs:line 98
+   at Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase`1.MoveNextImpl() in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seqcore.fs:line 371
+   at Microsoft.FSharp.Core.CompilerServices.GeneratedSequenceBase`1.System-Collections-IEnumerator-MoveNext() in F:\workspace\_work\1\s\src\fsharp\FSharp.Core\seqcore.fs:line 403
+   at Microsoft.FSharp.Collections.SeqModule.ToList[T](IEnumerable`1 source)
+   at Restler.ResultsAnalyzer.Analyze.Main.main(AnalyzeArgs args) in /home/restler-fuzzer/src/ResultsAnalyzer/Analyze/Main.fs:line 88
+   at Restler.ResultsAnalyzer.Program.main(String[] argv) in /home/restler-fuzzer/src/ResultsAnalyzer/Program.fs:line 223

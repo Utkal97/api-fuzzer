@@ -1,0 +1,3038 @@
+[
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "name"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "nameLike"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "nameLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "version"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "version",
+        "ProducerParameterName": "version",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "category"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "category",
+        "ProducerParameterName": "category",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "categoryNotEquals"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "categoryNotEquals",
+        "ProducerParameterName": "equals",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "nameLikeIgnoreCase"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "nameLikeIgnoreCase",
+        "ProducerParameterName": "case",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "parentDeploymentId"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "parentDeploymentId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "key"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "key",
+        "ProducerParameterName": "key",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "keyLike"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "keyLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "keyLikeIgnoreCase"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "keyLikeIgnoreCase",
+        "ProducerParameterName": "case",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "createTimeAfter"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "createTimeAfter",
+        "ProducerParameterName": "after",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Object"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "deploymentId"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "deploymentId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "createTime"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "createTime",
+        "ProducerParameterName": "time",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Object"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "createTimeBefore"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "createTimeBefore",
+        "ProducerParameterName": "before",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Object"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "resourceName"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "resourceName",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "categoryLike"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "categoryLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "resourceNameLike"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "resourceNameLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "latest"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "latest",
+        "ProducerParameterName": "latest",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "onlyInbound"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "onlyInbound",
+        "ProducerParameterName": "inbound",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "implementation"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "implementation",
+        "ProducerParameterName": "implementation",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": {
+          "Enum": [
+            "sort",
+            "String",
+            [
+              "name",
+              "id",
+              "key",
+              "category",
+              "deploymentId",
+              "version"
+            ],
+            null
+          ]
+        }
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "onlyOutbound"
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "onlyOutbound",
+        "ProducerParameterName": "outbound",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions/{channelDefinitionId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "channelDefinitionId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "channel-definitions"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "channel-definitions",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "channelDefinitionId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions/{channelDefinitionId}/model",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "channelDefinitionId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "channel-definitions"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "model",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "channelDefinitionId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/channel-definitions/{channelDefinitionId}/resourcedata",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "channelDefinitionId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "channel-definitions"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "channel-definitions",
+        "PathContainerName": "resourcedata",
+        "CandidateTypeNames": [
+          "channel__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "channelDefinitionId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "name"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "nameLike"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "nameLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "category"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "category",
+        "ProducerParameterName": "category",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "categoryNotEquals"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "categoryNotEquals",
+        "ProducerParameterName": "equals",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "parentDeploymentId"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "parentDeploymentId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "parentDeploymentIdLike"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "parentDeploymentIdLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "tenantIdLike"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "tenantIdLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "tenantId"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "tenantId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": {
+          "Enum": [
+            "sort",
+            "String",
+            [
+              "id",
+              "name",
+              "deployTime",
+              "tenantId"
+            ],
+            null
+          ]
+        }
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "withoutTenantId"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "withoutTenantId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "category"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "category",
+        "ProducerParameterName": "category",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "tenantId"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "tenantId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "QueryResource": "deploymentName"
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "deploymentName",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments/{deploymentId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "deploymentId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "deployments"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "deploymentId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/event-registry-repository/deployments",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "id",
+              "fullPath": {
+                "path": [
+                  "id"
+                ]
+              }
+            }
+          },
+          "ContainerName": "deployments",
+          "PathContainerName": "deployments",
+          "CandidateTypeNames": [
+            "deployment"
+          ],
+          "AccessPath": "id",
+          "AccessPathParts": {
+            "path": [
+              "id"
+            ]
+          },
+          "ResourceName": "id",
+          "ProducerParameterName": "id",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments/{deploymentId}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "deploymentId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "deployments"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "deployments",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "deploymentId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/event-registry-repository/deployments",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "id",
+              "fullPath": {
+                "path": [
+                  "id"
+                ]
+              }
+            }
+          },
+          "ContainerName": "deployments",
+          "PathContainerName": "deployments",
+          "CandidateTypeNames": [
+            "deployment"
+          ],
+          "AccessPath": "id",
+          "AccessPathParts": {
+            "path": [
+              "id"
+            ]
+          },
+          "ResourceName": "id",
+          "ProducerParameterName": "id",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments/{deploymentId}/resourcedata/{resourceName}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "deploymentId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "deployments"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "resourcedata",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "deploymentId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/event-registry-repository/deployments",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "id",
+              "fullPath": {
+                "path": [
+                  "id"
+                ]
+              }
+            }
+          },
+          "ContainerName": "deployments",
+          "PathContainerName": "deployments",
+          "CandidateTypeNames": [
+            "deployment"
+          ],
+          "AccessPath": "id",
+          "AccessPathParts": {
+            "path": [
+              "id"
+            ]
+          },
+          "ResourceName": "id",
+          "ProducerParameterName": "id",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments/{deploymentId}/resourcedata/{resourceName}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "resourceName",
+            "pathToParameter": [
+              "event-registry-repository",
+              "deployments",
+              "{deploymentId}",
+              "resourcedata"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "resourcedata",
+        "PathContainerName": "resourcedata",
+        "CandidateTypeNames": [
+          "resourcedatum"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "resourceName",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments/{deploymentId}/resources",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "deploymentId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "deployments"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "resources",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "deploymentId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/event-registry-repository/deployments",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "id",
+              "fullPath": {
+                "path": [
+                  "id"
+                ]
+              }
+            }
+          },
+          "ContainerName": "deployments",
+          "PathContainerName": "deployments",
+          "CandidateTypeNames": [
+            "deployment"
+          ],
+          "AccessPath": "id",
+          "AccessPathParts": {
+            "path": [
+              "id"
+            ]
+          },
+          "ResourceName": "id",
+          "ProducerParameterName": "id",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/deployments/{deploymentId}/resources/**",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "deploymentId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "deployments"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "deployments",
+        "PathContainerName": "**",
+        "CandidateTypeNames": [
+          "deployment"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "deploymentId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "ResponseObject": {
+        "id": {
+          "RequestId": {
+            "endpoint": "/event-registry-repository/deployments",
+            "method": "Post"
+          },
+          "ResourceReference": {
+            "BodyResource": {
+              "name": "id",
+              "fullPath": {
+                "path": [
+                  "id"
+                ]
+              }
+            }
+          },
+          "ContainerName": "deployments",
+          "PathContainerName": "deployments",
+          "CandidateTypeNames": [
+            "deployment"
+          ],
+          "AccessPath": "id",
+          "AccessPathParts": {
+            "path": [
+              "id"
+            ]
+          },
+          "ResourceName": "id",
+          "ProducerParameterName": "id",
+          "IsNestedBodyResource": false,
+          "PrimitiveType": "String"
+        }
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "name"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "nameLike"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "nameLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "version"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "version",
+        "ProducerParameterName": "version",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "category"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "category",
+        "ProducerParameterName": "category",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "categoryNotEquals"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "categoryNotEquals",
+        "ProducerParameterName": "equals",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "nameLikeIgnoreCase"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "nameLikeIgnoreCase",
+        "ProducerParameterName": "case",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "parentDeploymentId"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "parentDeploymentId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "key"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "key",
+        "ProducerParameterName": "key",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "keyLike"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "keyLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "keyLikeIgnoreCase"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "keyLikeIgnoreCase",
+        "ProducerParameterName": "case",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "deploymentId"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "deploymentId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "resourceName"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "resourceName",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "categoryLike"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "categoryLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "resourceNameLike"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "resourceNameLike",
+        "ProducerParameterName": "like",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "latest"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "latest",
+        "ProducerParameterName": "latest",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "sort"
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "sort",
+        "ProducerParameterName": "sort",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": {
+          "Enum": [
+            "sort",
+            "String",
+            [
+              "name",
+              "id",
+              "key",
+              "category",
+              "deploymentId",
+              "version"
+            ],
+            null
+          ]
+        }
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions/{eventDefinitionId}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "eventDefinitionId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "event-definitions"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "event-definitions",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "eventDefinitionId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions/{eventDefinitionId}/model",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "eventDefinitionId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "event-definitions"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "model",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "eventDefinitionId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-repository/event-definitions/{eventDefinitionId}/resourcedata",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "eventDefinitionId",
+            "pathToParameter": [
+              "event-registry-repository",
+              "event-definitions"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "event-definitions",
+        "PathContainerName": "resourcedata",
+        "CandidateTypeNames": [
+          "event__definition"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "eventDefinitionId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "channelDefinitionId",
+            "fullPath": {
+              "path": [
+                "channelDefinitionId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "event-instances",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__instance"
+        ],
+        "AccessPath": "channelDefinitionId",
+        "AccessPathParts": {
+          "path": [
+            "channelDefinitionId"
+          ]
+        },
+        "ResourceName": "channelDefinitionId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "channelDefinitionKey",
+            "fullPath": {
+              "path": [
+                "channelDefinitionKey"
+              ]
+            }
+          }
+        },
+        "ContainerName": "event-instances",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__instance"
+        ],
+        "AccessPath": "channelDefinitionKey",
+        "AccessPathParts": {
+          "path": [
+            "channelDefinitionKey"
+          ]
+        },
+        "ResourceName": "channelDefinitionKey",
+        "ProducerParameterName": "key",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "eventDefinitionId",
+            "fullPath": {
+              "path": [
+                "eventDefinitionId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "event-instances",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__instance"
+        ],
+        "AccessPath": "eventDefinitionId",
+        "AccessPathParts": {
+          "path": [
+            "eventDefinitionId"
+          ]
+        },
+        "ResourceName": "eventDefinitionId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "eventDefinitionKey",
+            "fullPath": {
+              "path": [
+                "eventDefinitionKey"
+              ]
+            }
+          }
+        },
+        "ContainerName": "event-instances",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__instance"
+        ],
+        "AccessPath": "eventDefinitionKey",
+        "AccessPathParts": {
+          "path": [
+            "eventDefinitionKey"
+          ]
+        },
+        "ResourceName": "eventDefinitionKey",
+        "ProducerParameterName": "key",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "eventPayload",
+            "fullPath": {
+              "path": [
+                "eventPayload"
+              ]
+            }
+          }
+        },
+        "ContainerName": "event-instances",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__instance"
+        ],
+        "AccessPath": "eventPayload",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload"
+          ]
+        },
+        "ResourceName": "eventPayload",
+        "ProducerParameterName": "payload",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "array",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "array"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/array",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "array"
+          ]
+        },
+        "ResourceName": "array",
+        "ProducerParameterName": "array",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "bigDecimal",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "bigDecimal"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/bigDecimal",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "bigDecimal"
+          ]
+        },
+        "ResourceName": "bigDecimal",
+        "ProducerParameterName": "decimal",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "bigInteger",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "bigInteger"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/bigInteger",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "bigInteger"
+          ]
+        },
+        "ResourceName": "bigInteger",
+        "ProducerParameterName": "integer",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "binary",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "binary"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/binary",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "binary"
+          ]
+        },
+        "ResourceName": "binary",
+        "ProducerParameterName": "binary",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "boolean",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "boolean"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/boolean",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "boolean"
+          ]
+        },
+        "ResourceName": "boolean",
+        "ProducerParameterName": "boolean",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "containerNode",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "containerNode"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/containerNode",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "containerNode"
+          ]
+        },
+        "ResourceName": "containerNode",
+        "ProducerParameterName": "node",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "double",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "double"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/double",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "double"
+          ]
+        },
+        "ResourceName": "double",
+        "ProducerParameterName": "double",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "float",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "float"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/float",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "float"
+          ]
+        },
+        "ResourceName": "float",
+        "ProducerParameterName": "float",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "floatingPointNumber",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "floatingPointNumber"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/floatingPointNumber",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "floatingPointNumber"
+          ]
+        },
+        "ResourceName": "floatingPointNumber",
+        "ProducerParameterName": "number",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "int",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "int"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/int",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "int"
+          ]
+        },
+        "ResourceName": "int",
+        "ProducerParameterName": "int",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "integralNumber",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "integralNumber"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/integralNumber",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "integralNumber"
+          ]
+        },
+        "ResourceName": "integralNumber",
+        "ProducerParameterName": "number",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "long",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "long"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/long",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "long"
+          ]
+        },
+        "ResourceName": "long",
+        "ProducerParameterName": "long",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "missingNode",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "missingNode"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/missingNode",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "missingNode"
+          ]
+        },
+        "ResourceName": "missingNode",
+        "ProducerParameterName": "node",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "nodeType",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "nodeType"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/nodeType",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "nodeType"
+          ]
+        },
+        "ResourceName": "nodeType",
+        "ProducerParameterName": "type",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": {
+          "Enum": [
+            "nodeType",
+            "String",
+            [
+              "ARRAY",
+              "BINARY",
+              "BOOLEAN",
+              "MISSING",
+              "NULL",
+              "NUMBER",
+              "OBJECT",
+              "POJO",
+              "STRING"
+            ],
+            null
+          ]
+        }
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "null",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "null"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/null",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "null"
+          ]
+        },
+        "ResourceName": "null",
+        "ProducerParameterName": "null",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "number",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "number"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/number",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "number"
+          ]
+        },
+        "ResourceName": "number",
+        "ProducerParameterName": "number",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "object",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "object"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/object",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "object"
+          ]
+        },
+        "ResourceName": "object",
+        "ProducerParameterName": "object",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "pojo",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "pojo"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/pojo",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "pojo"
+          ]
+        },
+        "ResourceName": "pojo",
+        "ProducerParameterName": "pojo",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "short",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "short"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/short",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "short"
+          ]
+        },
+        "ResourceName": "short",
+        "ProducerParameterName": "short",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "textual",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "textual"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/textual",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "textual"
+          ]
+        },
+        "ResourceName": "textual",
+        "ProducerParameterName": "textual",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "valueNode",
+            "fullPath": {
+              "path": [
+                "eventPayload",
+                "valueNode"
+              ]
+            }
+          }
+        },
+        "ContainerName": "eventPayload",
+        "BodyContainerName": "eventPayload",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__payload",
+          "payload"
+        ],
+        "AccessPath": "eventPayload/valueNode",
+        "AccessPathParts": {
+          "path": [
+            "eventPayload",
+            "valueNode"
+          ]
+        },
+        "ResourceName": "valueNode",
+        "ProducerParameterName": "node",
+        "IsNestedBodyResource": true,
+        "PrimitiveType": "Bool"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/event-registry-runtime/event-instances",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "tenantId",
+            "fullPath": {
+              "path": [
+                "tenantId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "event-instances",
+        "PathContainerName": "event-instances",
+        "CandidateTypeNames": [
+          "event__instance"
+        ],
+        "AccessPath": "tenantId",
+        "AccessPathParts": {
+          "path": [
+            "tenantId"
+          ]
+        },
+        "ResourceName": "tenantId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  }
+]

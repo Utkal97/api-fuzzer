@@ -1,0 +1,32 @@
+Restler Information: 0 : Starting task Test...
+    DateTime=2024-05-04T17:03:28.6434403Z
+Restler Information: 0 : Launching 'python.exe --version'
+    DateTime=2024-05-04T17:03:29.2204881Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0202148 with exit code 0x0: 'python.exe --version'
+    DateTime=2024-05-04T17:03:29.2607576Z
+Restler Information: 0 : (16408) python.exe --version exited with code: 0
+    DateTime=2024-05-04T17:03:29.2702634Z
+Restler Information: 0 : Launching 'python.exe -B "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\restlerBin\restler\../engine/restler.py" --restler_grammar "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\grammar.py" --custom_mutations "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\dict.json" --set_version 9.2.3    --no_ssl   --settings "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\engine_settings.json"     --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2024-05-04T17:03:29.2842579Z
+Restler Information: 0 : Process execution terminated in 00:00:14.7464885 with exit code 0x0: 'python.exe -B "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\restlerBin\restler\../engine/restler.py" --restler_grammar "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\grammar.py" --custom_mutations "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\dict.json" --set_version 9.2.3    --no_ssl   --settings "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\engine_settings.json"     --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test'
+    DateTime=2024-05-04T17:03:44.0308484Z
+Restler Information: 0 : (15864) python.exe -B "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\restlerBin\restler\../engine/restler.py" --restler_grammar "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\grammar.py" --custom_mutations "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\dict.json" --set_version 9.2.3    --no_ssl   --settings "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\engine_settings.json"     --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode directed-smoke-test exited with code: 0
+    DateTime=2024-05-04T17:03:44.0310001Z
+Restler Information: 0 : Launching 'dotnet "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\restlerBin\restler\../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Test" --output_dir "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Test\ResponseBuckets" --dictionary_file "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\dict.json" --max_instances_per_bucket 10'
+    DateTime=2024-05-04T17:03:44.0384565Z
+Restler Information: 0 : Process execution terminated in 00:00:00.4882524 with exit code 0x0: 'dotnet "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\restlerBin\restler\../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Test" --output_dir "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Test\ResponseBuckets" --dictionary_file "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\dict.json" --max_instances_per_bucket 10'
+    DateTime=2024-05-04T17:03:44.5267847Z
+Restler Information: 0 : (9864) dotnet "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\restlerBin\restler\../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Test" --output_dir "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Test\ResponseBuckets" --dictionary_file "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\dict.json" --max_instances_per_bucket 10 exited with code: 0
+    DateTime=2024-05-04T17:03:44.5269060Z
+Restler Information: 0 : Request coverage (successful / total): 0 / 17
+    DateTime=2024-05-04T17:03:44.6634202Z
+Restler Information: 0 : Attempted requests: 12 / 17
+    DateTime=2024-05-04T17:03:44.6637278Z
+Restler Information: 0 : No bugs were found.
+    DateTime=2024-05-04T17:03:44.6658775Z
+Restler Information: 0 : See 'coverage_failures_to_investigate.txt' to investigate API coverage.
+    DateTime=2024-05-04T17:03:44.7429947Z
+Restler Information: 0 : Task Test succeeded.
+    DateTime=2024-05-04T17:03:44.7456241Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2024-05-04T17:03:44.8487109Z

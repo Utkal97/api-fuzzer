@@ -1,0 +1,487 @@
+[5/4/2024 12:35:33 PM] Generating grammar...
+[5/4/2024 12:35:33 PM] Getting requests...
+found unsupported format: byte
+found unsupported format: byte
+found unsupported format: byte
+[5/4/2024 12:35:33 PM] Getting dependencies...
+[5/4/2024 12:35:33 PM] Getting path consumers...
+[5/4/2024 12:35:33 PM] Getting query consumers...
+[5/4/2024 12:35:33 PM] Getting header consumers...
+[5/4/2024 12:35:33 PM] Getting body consumers...
+[5/4/2024 12:35:33 PM] Getting producers...
+[5/4/2024 12:35:33 PM] Done processing producers
+[5/4/2024 12:35:33 PM] Compute dependencies
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-management/engine"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-runtime/event-instances"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/event-definitions/{eventDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-management/engine"
+  xMsPath = None
+  method = Get }[
+5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/channel-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-runtime/event-instances"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/channel-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/event-definitions/{eventDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-management/engine"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-runtime/event-instances"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] [5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Delete }
+Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM[] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Delete }5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Post }
+
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-management/engine"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-runtime/event-instances"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-management/engine"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-management/engine"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resourcedata/{resourceName}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resourcedata/{resourceName}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/model"
+  xMsPath = None
+  method = Get }[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/channel-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resourcedata/{resourceName}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/channel-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resourcedata/{resourceName}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resourcedata/{resourceName}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}/resources"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}/resources"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}/resources"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resourcedata/{resourceName}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-runtime/event-instances"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resources/**"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}/resources"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-runtime/event-instances"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}/resources"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resources/**"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}/resources"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resources/**"
+  xMsPath = None
+  method = Get }[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resources/**"
+  xMsPath = None
+  method = Get }
+
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resources/**"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resources/**"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/event-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/event-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/event-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/event-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/event-definitions/{eventDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/event-definitions/{eventDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-management/engine"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-management/engine"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/channel-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/channel-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/channel-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Get }[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resourcedata/{resourceName}"
+  xMsPath = None
+  method = Get }
+
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/event-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Delete }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/model"
+  xMsPath = None
+  method = Get }[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resourcedata/{resourceName}"
+  xMsPath = None
+  method = Get }
+
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/channel-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/event-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}/resources"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-runtime/event-instances"
+  xMsPath = None
+  method = Post }[
+5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/event-definitions/{eventDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/channel-definitions/{channelDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}/resources"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/event-definitions/{eventDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-runtime/event-instances"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resources/**"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/deployments/{deploymentId}/resources/**"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments"
+  xMsPath = None
+  method = Post }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/event-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/event-definitions"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/deployments/{deploymentId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint = "/event-registry-repository/event-definitions/{eventDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint = "/event-registry-repository/event-definitions/{eventDefinitionId}"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/model"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Second pass dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Done dependencies for request { endpoint =
+            "/event-registry-repository/event-definitions/{eventDefinitionId}/resourcedata"
+  xMsPath = None
+  method = Get }
+[5/4/2024 12:35:33 PM] Assigning equality constraints...
+[5/4/2024 12:35:33 PM] Getting ordering constraints...
+[5/4/2024 12:35:33 PM] Dependency analysis completed.
+[5/4/2024 12:35:33 PM] Generating request primitives...
+Writing new dictionary to C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\dict.json
+[5/4/2024 12:35:34 PM] Generating python grammar...
+[5/4/2024 12:35:34 PM] Get requests
+[5/4/2024 12:35:34 PM] Done get requests
+[5/4/2024 12:35:34 PM] Done generating python grammar.
+Workflow completed.  See C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile for REST-ler grammar.

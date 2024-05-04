@@ -1,0 +1,12 @@
+Restler Information: 0 : Starting task Compile...
+    DateTime=2024-05-04T16:35:32.1173402Z
+Restler Information: 0 : Launching 'dotnet "C:\Users\NaraVishnuSai\Desktop\Restler\restler-fuzzer\restler_bin\restler\../compiler/Restler.CompilerExe.dll" "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\config.json"'
+    DateTime=2024-05-04T16:35:32.9591983Z
+Restler Information: 0 : Process execution terminated in 00:00:01.2623553 with exit code 0x0: 'dotnet "C:\Users\NaraVishnuSai\Desktop\Restler\restler-fuzzer\restler_bin\restler\../compiler/Restler.CompilerExe.dll" "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\config.json"'
+    DateTime=2024-05-04T16:35:34.2273040Z
+Restler Information: 0 : (16776) dotnet "C:\Users\NaraVishnuSai\Desktop\Restler\restler-fuzzer\restler_bin\restler\../compiler/Restler.CompilerExe.dll" "C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\uploadswagger\swagger_files\Compile\config.json" exited with code: 0
+    DateTime=2024-05-04T16:35:34.2350357Z
+Restler Information: 0 : Task Compile succeeded.
+    DateTime=2024-05-04T16:35:34.2496354Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2024-05-04T16:35:34.3575896Z

@@ -1,0 +1,475 @@
+[
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "description",
+            "fullPath": {
+              "path": [
+                "description"
+              ]
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPath": "description",
+        "AccessPathParts": {
+          "path": [
+            "description"
+          ]
+        },
+        "ResourceName": "description",
+        "ProducerParameterName": "description",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "imageUrl",
+            "fullPath": {
+              "path": [
+                "imageUrl"
+              ]
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPath": "imageUrl",
+        "AccessPathParts": {
+          "path": [
+            "imageUrl"
+          ]
+        },
+        "ResourceName": "imageUrl",
+        "ProducerParameterName": "url",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "price",
+            "fullPath": {
+              "path": [
+                "price"
+              ]
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPath": "price",
+        "AccessPathParts": {
+          "path": [
+            "price"
+          ]
+        },
+        "ResourceName": "price",
+        "ProducerParameterName": "price",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Number"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "productId",
+            "fullPath": {
+              "path": [
+                "productId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPath": "productId",
+        "AccessPathParts": {
+          "path": [
+            "productId"
+          ]
+        },
+        "ResourceName": "productId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "productName",
+            "fullPath": {
+              "path": [
+                "productName"
+              ]
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPath": "productName",
+        "AccessPathParts": {
+          "path": [
+            "productName"
+          ]
+        },
+        "ResourceName": "productName",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "product"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "product"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    },
+    "producer": {
+      "DictionaryPayload": {
+        "payloadType": "UuidSuffix",
+        "primitiveType": "Int",
+        "name": "id",
+        "isObject": false
+      }
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "description",
+            "fullPath": {
+              "path": [
+                "description"
+              ]
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPath": "description",
+        "AccessPathParts": {
+          "path": [
+            "description"
+          ]
+        },
+        "ResourceName": "description",
+        "ProducerParameterName": "description",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "imageUrl",
+            "fullPath": {
+              "path": [
+                "imageUrl"
+              ]
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPath": "imageUrl",
+        "AccessPathParts": {
+          "path": [
+            "imageUrl"
+          ]
+        },
+        "ResourceName": "imageUrl",
+        "ProducerParameterName": "url",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "price",
+            "fullPath": {
+              "path": [
+                "price"
+              ]
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPath": "price",
+        "AccessPathParts": {
+          "path": [
+            "price"
+          ]
+        },
+        "ResourceName": "price",
+        "ProducerParameterName": "price",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Number"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "productId",
+            "fullPath": {
+              "path": [
+                "productId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPath": "productId",
+        "AccessPathParts": {
+          "path": [
+            "productId"
+          ]
+        },
+        "ResourceName": "productId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product/{id}",
+          "method": "Put"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "productName",
+            "fullPath": {
+              "path": [
+                "productName"
+              ]
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPath": "productName",
+        "AccessPathParts": {
+          "path": [
+            "productName"
+          ]
+        },
+        "ResourceName": "productName",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/api/product/{id}",
+          "method": "Delete"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "api",
+              "product"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "product",
+        "PathContainerName": "product",
+        "CandidateTypeNames": [
+          "product"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Int"
+      },
+      "parameterKind": "Path"
+    }
+  }
+]

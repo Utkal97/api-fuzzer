@@ -1,0 +1,163 @@
+main_driver_502: 3
+PayloadBodyChecker_502: 3
+DataDrivenChecker_20x: 5
+main_driver_503: 1
+Total Buckets: 12
+-------------
+main_driver_502 - Bug was reproduced - main_driver_502_1.txt
+Hash: main_driver_502_de4cbdf35a80700b0d8577e175d893ea4fe480fd
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+POST /Feedback HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\nContent-Type: application/json\r\n\r\n{\n    "feedbackType":\n        'General', 'Bug', 'DataError', 'Suggestion'\n    ,\n    "feedback":fuzzstring,\n    "entityId":566048da-ed19-4cd3-8e0a-b7e0e1ec4d72}\r\n
+--------------------------------------------------------------------------------
+main_driver_502 - Unable to reproduce bug - main_driver_502_2.txt
+Attempted to reproduce 0 time(s); Reproduced 0 time(s)
+Hash: main_driver_502_0388ebcd5a8c9c3be0ce3f930aeec033f6f63f62
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+POST /Feedback HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\nContent-Type: application/json\r\n\r\n{\n    "feedbackType":\n        'General', 'Bug', 'DataError', 'Suggestion'\n    ,\n    "feedback":fuzzstring,\n    "entityId":566048da-ed19-4cd3-8e0a-b7e0e1ec4d72}\r\n
+POST /Feedback HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\nContent-Type: application/json\r\n\r\n{\n    "feedbackType":\n        'General', 'Bug', 'DataError', 'Suggestion'\n    ,\n    "feedback":fuzzstring,\n    "entityId":566048da-ed19-4cd3-8e0a-b7e0e1ec4d72}\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+--------------------------------------------------------------------------------
+main_driver_502 - Unable to reproduce bug - main_driver_502_3.txt
+Attempted to reproduce 0 time(s); Reproduced 0 time(s)
+Hash: main_driver_502_4defcd97a2d3388b274f9926e8eb5d67875231de
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+POST /Feedback HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\nContent-Type: application/json\r\n\r\n{\n    "feedbackType":\n        'General', 'Bug', 'DataError', 'Suggestion'\n    ,\n    "feedback":fuzzstring,\n    "entityId":566048da-ed19-4cd3-8e0a-b7e0e1ec4d72}\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses/566048da-ed19-4cd3-8e0a-b7e0e1ec4d72 HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+--------------------------------------------------------------------------------
+PayloadBodyChecker_502 - Bug was reproduced - PayloadBodyChecker_502_1.txt
+Hash: PayloadBodyChecker_502_23ad49b8b948ca31977bc1bb132591fcf94136a7
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+POST /Feedback HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\nContent-Type: application/json\r\n\r\n{"feedback":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_502 - Bug was reproduced - PayloadBodyChecker_502_2.txt
+Hash: PayloadBodyChecker_502_001150ca1bbe0d653da144fc23376da457bfb84e
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+POST /Feedback HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\nContent-Type: application/json\r\n\r\n{"feedbackType":"General"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_502 - Bug was reproduced - PayloadBodyChecker_502_3.txt
+Hash: PayloadBodyChecker_502_eaebb5a48e40522317bacb313efd8c7ccc0dba6f
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+POST /Feedback HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\nContent-Type: application/json\r\n\r\n{'id': '0367baf3-1cb6-4baf-bede-48e17e1cd005', 'name': 'gryffindor', 'housecolours': 'scarlet and gold', 'founder': 'godric gryffindor', 'animal': 'lion', 'element': 'fire', 'ghost': 'nearly-headless nick', 'commonroom': 'gryffindor tower', 'heads': [{'id': '530da97d-5a83-4ea6-bc15-790edf5b5efc', 'firstname': 'minerva', 'lastname': 'mcgonagall'}, {'id': '9915c5f8-9177-4f63-bba8-d04387a404f9', 'firstname': 'godric', 'lastname': 'gryffindor'}], 'traits': [{'id': '1773bce8-7a22-4d57-b8e1-7e1cbe26fa2b', 'name': 'courage'}, {'id': '21f22e43-efd9-4a43-87f5-eab5fb1666ea', 'name': 'chivalary'}, {'id': '60d8f5d0-de4b-41f7-b152-40543555bf3a', 'name': 'nerve'}, {'id': '68f73efc-fae9-4a54-b3e2-04bbe72f5d63', 'name': 'daring'}, {'id': '7e6d321d-fe7d-4c05-8ad7-ddabda83d8cd', 'name': 'determination'}, {'id': 'adf83e9f-859b-41c4-947d-b359a05f8f3c', 'name': 'bravery'}]}
+--------------------------------------------------------------------------------
+DataDrivenChecker_20x - Bug was reproduced - DataDrivenChecker_20x_1.txt
+Hash: DataDrivenChecker_20x_476e972492a70224d77b1c3c2b024c6c74a4aebc
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+--------------------------------------------------------------------------------
+DataDrivenChecker_20x - Bug was reproduced - DataDrivenChecker_20x_2.txt
+Hash: DataDrivenChecker_20x_3218e838f7b6ee68c2923bb834ac6229b48227df
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+--------------------------------------------------------------------------------
+DataDrivenChecker_20x - Bug was reproduced - DataDrivenChecker_20x_3.txt
+Hash: DataDrivenChecker_20x_fdbd2eceeae9e02f9daf9a4bada1a50999a6c754
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+--------------------------------------------------------------------------------
+DataDrivenChecker_20x - Bug was reproduced - DataDrivenChecker_20x_4.txt
+Hash: DataDrivenChecker_20x_0fa0159769438bbabf0ac0a74cb612ac57386892
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+--------------------------------------------------------------------------------
+DataDrivenChecker_20x - Bug was reproduced - DataDrivenChecker_20x_5.txt
+Hash: DataDrivenChecker_20x_0388ebcd5a8c9c3be0ce3f930aeec033f6f63f62
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+--------------------------------------------------------------------------------
+main_driver_503 - Unable to reproduce bug - main_driver_503_1.txt
+Attempted to reproduce 0 time(s); Reproduced 0 time(s)
+Hash: main_driver_503_de4cbdf35a80700b0d8577e175d893ea4fe480fd
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Elixirs?Name=fuzzstring&Difficulty='Unknown', 'Advanced', 'Moderate', 'Beginner', 'OrdinaryWizardingLevel', 'OneOfAKind'&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Spells?Name=fuzzstring&Type='None', 'Charm', 'Conjuration', 'Spell', 'Transfiguration', 'HealingSpell', 'DarkCharm', 'Jinx', 'Curse', 'MagicalTransportation', 'Hex', 'CounterSpell', 'DarkArts', 'CounterJinx', 'CounterCharm', 'Untransfiguration', 'BindingMagicalContract', 'Vanishment'&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Houses?query={ "fuzz": false } HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+POST /Feedback HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\nContent-Type: application/json\r\n\r\n{\n    "feedbackType":\n        'General', 'Bug', 'DataError', 'Suggestion'\n    ,\n    "feedback":fuzzstring,\n    "entityId":566048da-ed19-4cd3-8e0a-b7e0e1ec4d72}\r\n
+--------------------------------------------------------------------------------

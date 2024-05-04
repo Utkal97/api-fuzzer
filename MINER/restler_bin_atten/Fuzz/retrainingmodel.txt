@@ -1,0 +1,88 @@
+start retrainingmodel
+1
+mutation_list length: 0
+mutationlist_sum: 0
+nowtime: 2024-04-22 22:28:50.948669
+finish readdata
+mutation_list length: 0
+mutationlist_sum: 0
+nowtime: 2024-04-22 22:30:53.021346
+
+start retrainingmodel
+2
+mutation_list length: 0
+mutationlist_sum: 0
+nowtime: 2024-04-23 00:28:53.469930
+seq_gen200: 0   seq_gen500: 0   seq_gen400: 0   seq_gen_num: 0
+seq_nogen200: 8580   seq_nogen500: 0   seq_nogen400: 0   seq_nogen_num: 8580
+score_gen: 0.0   score_nogen: 0
+finish readdata
+mutation_list length: 4
+mutationlist_sum: 7
+nowtime: 2024-04-23 00:31:26.422691
+
+start retrainingmodel
+3
+mutation_list length: 4
+mutationlist_sum: 7
+nowtime: 2024-04-23 02:28:54.197027
+seq_gen200: 1   seq_gen500: 0   seq_gen400: 0   seq_gen_num: 1
+seq_nogen200: 27921   seq_nogen500: 0   seq_nogen400: 0   seq_nogen_num: 27921
+score_gen: 100515.59999999999   score_nogen: 83763
+finish readdata
+mutation_list length: 4
+mutationlist_sum: 10
+nowtime: 2024-04-23 02:30:08.064792
+
+start retrainingmodel
+4
+mutation_list length: 4
+mutationlist_sum: 10
+nowtime: 2024-04-23 04:28:55.279122
+seq_gen200: 1   seq_gen500: 0   seq_gen400: 0   seq_gen_num: 1
+seq_nogen200: 47735   seq_nogen500: 0   seq_nogen400: 0   seq_nogen_num: 47735
+score_gen: 171846.0   score_nogen: 143205
+finish readdata
+mutation_list length: 4
+mutationlist_sum: 15
+nowtime: 2024-04-23 04:31:07.154178
+
+start retrainingmodel
+5
+mutation_list length: 4
+mutationlist_sum: 15
+nowtime: 2024-04-23 06:28:56.511512
+seq_gen200: 1   seq_gen500: 0   seq_gen400: 0   seq_gen_num: 1
+seq_nogen200: 66528   seq_nogen500: 0   seq_nogen400: 0   seq_nogen_num: 66528
+score_gen: 239500.8   score_nogen: 199584
+finish readdata
+mutation_list length: 4
+mutationlist_sum: 19
+nowtime: 2024-04-23 06:30:28.244253
+
+start retrainingmodel
+6
+mutation_list length: 4
+mutationlist_sum: 19
+nowtime: 2024-04-23 08:28:57.722335
+seq_gen200: 1   seq_gen500: 0   seq_gen400: 0   seq_gen_num: 1
+seq_nogen200: 84036   seq_nogen500: 0   seq_nogen400: 0   seq_nogen_num: 84036
+score_gen: 302529.6   score_nogen: 252108
+finish readdata
+mutation_list length: 4
+mutationlist_sum: 23
+nowtime: 2024-04-23 08:29:58.151092
+
+start retrainingmodel
+7
+mutation_list length: 4
+mutationlist_sum: 23
+nowtime: 2024-04-23 10:28:59.021571
+seq_gen200: 1   seq_gen500: 0   seq_gen400: 0   seq_gen_num: 1
+seq_nogen200: 99433   seq_nogen500: 0   seq_nogen400: 0   seq_nogen_num: 99433
+score_gen: 357958.8   score_nogen: 298299
+finish readdata
+mutation_list length: 4
+mutationlist_sum: 26
+nowtime: 2024-04-23 10:32:19.029303
+

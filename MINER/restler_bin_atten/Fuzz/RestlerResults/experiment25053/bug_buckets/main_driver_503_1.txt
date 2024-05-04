@@ -1,0 +1,61 @@
+################################################################################
+ main_driver_503
+
+ Hash: main_driver_503_de4cbdf35a80700b0d8577e175d893ea4fe480fd
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> GET /Spells?Name=fuzzstring&Type=DarkArts&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713848543&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=RIK1eZunX0yQPoBLR6H8Q6DO5AqGzJq12Dc9%2ByRvhAs%3D"}]}\r\nReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713848543&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=RIK1eZunX0yQPoBLR6H8Q6DO5AqGzJq12Dc9%2ByRvhAs%3D\r\nNel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}\r\nConnection: keep-alive\r\nDate: Tue, 23 Apr 2024 05:02:23 GMT\r\nContent-Type: application/json; charset=utf-8\r\nServer: Kestrel\r\nContent-Length: 2\r\nVia: 1.1 vegur\r\n\r\n[]'
+
+-> GET /Spells?Name=fuzzstring&Type=BindingMagicalContract&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713848544&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=%2FVlYWZvnb5d3JyfQkZu3BLtMtS1TulqmUEbiYmecsro%3D"}]}\r\nReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713848544&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=%2FVlYWZvnb5d3JyfQkZu3BLtMtS1TulqmUEbiYmecsro%3D\r\nNel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}\r\nConnection: keep-alive\r\nDate: Tue, 23 Apr 2024 05:02:23 GMT\r\nContent-Type: application/json; charset=utf-8\r\nServer: Kestrel\r\nContent-Length: 2\r\nVia: 1.1 vegur\r\n\r\n[]'
+
+-> GET /Elixirs?Name=fuzzstring&Difficulty=Unknown&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713848544&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=%2FVlYWZvnb5d3JyfQkZu3BLtMtS1TulqmUEbiYmecsro%3D"}]}\r\nReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713848544&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=%2FVlYWZvnb5d3JyfQkZu3BLtMtS1TulqmUEbiYmecsro%3D\r\nNel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}\r\nConnection: keep-alive\r\nDate: Tue, 23 Apr 2024 05:02:24 GMT\r\nContent-Type: application/json; charset=utf-8\r\nServer: Kestrel\r\nContent-Length: 2\r\nVia: 1.1 vegur\r\n\r\n[]'
+
+-> GET /Elixirs?Name=fuzzstring&Difficulty=Moderate&Ingredient=fuzzstring&InventorFullName=fuzzstring&Manufacturer=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713848544&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=%2FVlYWZvnb5d3JyfQkZu3BLtMtS1TulqmUEbiYmecsro%3D"}]}\r\nReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713848544&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=%2FVlYWZvnb5d3JyfQkZu3BLtMtS1TulqmUEbiYmecsro%3D\r\nNel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}\r\nConnection: keep-alive\r\nDate: Tue, 23 Apr 2024 05:02:24 GMT\r\nContent-Type: application/json; charset=utf-8\r\nServer: Kestrel\r\nContent-Length: 2\r\nVia: 1.1 vegur\r\n\r\n[]'
+
+-> GET /Spells?Name=fuzzstring&Type=Jinx&Incantation=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713848544&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=%2FVlYWZvnb5d3JyfQkZu3BLtMtS1TulqmUEbiYmecsro%3D"}]}\r\nReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713848544&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=%2FVlYWZvnb5d3JyfQkZu3BLtMtS1TulqmUEbiYmecsro%3D\r\nNel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}\r\nConnection: keep-alive\r\nDate: Tue, 23 Apr 2024 05:02:24 GMT\r\nContent-Type: application/json; charset=utf-8\r\nServer: Kestrel\r\nContent-Length: 2\r\nVia: 1.1 vegur\r\n\r\n[]'
+
+-> GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713848545&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=KysTB9uRzi9DgAltpleh0OQyuRKs%2B8El4hywvS1E8do%3D"}]}\r\nReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713848545&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=KysTB9uRzi9DgAltpleh0OQyuRKs%2B8El4hywvS1E8do%3D\r\nNel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}\r\nConnection: keep-alive\r\nDate: Tue, 23 Apr 2024 05:02:24 GMT\r\nContent-Type: application/json; charset=utf-8\r\nServer: Kestrel\r\nContent-Length: 2\r\nVia: 1.1 vegur\r\n\r\n[]'
+
+-> GET /Ingredients?Name=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713848545&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=KysTB9uRzi9DgAltpleh0OQyuRKs%2B8El4hywvS1E8do%3D"}]}\r\nReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713848545&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=KysTB9uRzi9DgAltpleh0OQyuRKs%2B8El4hywvS1E8do%3D\r\nNel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}\r\nConnection: keep-alive\r\nDate: Tue, 23 Apr 2024 05:02:25 GMT\r\nContent-Type: application/json; charset=utf-8\r\nServer: Kestrel\r\nContent-Length: 2\r\nVia: 1.1 vegur\r\n\r\n[]'
+
+-> GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 200 OK\r\nReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713848545&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=KysTB9uRzi9DgAltpleh0OQyuRKs%2B8El4hywvS1E8do%3D"}]}\r\nReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713848545&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=KysTB9uRzi9DgAltpleh0OQyuRKs%2B8El4hywvS1E8do%3D\r\nNel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}\r\nConnection: keep-alive\r\nDate: Tue, 23 Apr 2024 05:02:25 GMT\r\nContent-Type: application/json; charset=utf-8\r\nServer: Kestrel\r\nContent-Length: 2\r\nVia: 1.1 vegur\r\n\r\n[]'
+
+-> GET /Wizards?FirstName=fuzzstring&LastName=fuzzstring HTTP/1.1\r\nAccept: application/json\r\nHost: wizard-world-api.herokuapp.com\r\n\r\n
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 503 Service Unavailable\r\nConnection: keep-alive\r\nServer: Cowboy\r\nDate: Tue, 23 Apr 2024 05:02:25 GMT\r\nContent-Length: 506\r\nReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1713848545&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=KysTB9uRzi9DgAltpleh0OQyuRKs%2B8El4hywvS1E8do%3D"}]}\r\nReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1713848545&sid=812dcc77-0bd0-43b1-a5f1-b25750382959&s=KysTB9uRzi9DgAltpleh0OQyuRKs%2B8El4hywvS1E8do%3D\r\nNel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}\r\nContent-Type: text/html; charset=utf-8\r\nCache-Control: no-cache, no-store\r\n\r\n<!DOCTYPE html>\n\t<html>\n\t  <head>\n\t\t<meta name="viewport" content="width=device-width, initial-scale=1">\n\t\t<meta charset="utf-8">\n\t\t<title>Application Error</title>\n\t\t<style media="screen">\n\t\t  html,body,iframe {\n\t\t\tmargin: 0;\n\t\t\tpadding: 0;\n\t\t  }\n\t\t  html,body {\n\t\t\theight: 100%;\n\t\t\toverflow: hidden;\n\t\t  }\n\t\t  iframe {\n\t\t\twidth: 100%;\n\t\t\theight: 100%;\n\t\t\tborder: 0;\n\t\t  }\n\t\t</style>\n\t  </head>\n\t  <body>\n\t\t<iframe src="//www.herokucdn.com/error-pages/application-error.html"></iframe>\n\t  </body>\n\t</html>'
+

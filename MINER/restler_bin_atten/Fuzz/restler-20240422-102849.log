@@ -1,0 +1,30 @@
+Restler Information: 0 : Starting task Fuzz...
+    DateTime=2024-04-23T02:28:50.0459641Z
+Restler Information: 0 : Launching 'python --version'
+    DateTime=2024-04-23T02:28:50.1763783Z
+Restler Information: 0 : Launching 'python3 --version'
+    DateTime=2024-04-23T02:28:50.1788995Z
+Restler Information: 0 : Process execution terminated in 00:00:00.0238338 with exit code 0x0: 'python3 --version'
+    DateTime=2024-04-23T02:28:50.2079570Z
+Restler Information: 0 : (25051) python3 --version exited with code: 0
+    DateTime=2024-04-23T02:28:50.2129070Z
+Restler Information: 0 : Launching 'python3 -B "/home/MINER/restler_bin_atten/restler/../engine/restler.py" --restler_grammar "/home/MINER/restler_bin_atten/Compile/grammar.py" --custom_mutations "/home/MINER/restler_bin_atten/Compile/dict.json" --set_version 7.3.0   --no_ssl   --settings "/home/MINER/restler_bin_atten/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 13.000000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap'
+    DateTime=2024-04-23T02:28:50.2204468Z
+Restler Information: 0 : Process execution terminated in 13:02:23.1871009 with exit code 0x0: 'python3 -B "/home/MINER/restler_bin_atten/restler/../engine/restler.py" --restler_grammar "/home/MINER/restler_bin_atten/Compile/grammar.py" --custom_mutations "/home/MINER/restler_bin_atten/Compile/dict.json" --set_version 7.3.0   --no_ssl   --settings "/home/MINER/restler_bin_atten/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 13.000000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap'
+    DateTime=2024-04-23T15:31:15.4460077Z
+Restler Information: 0 : (25053) python3 -B "/home/MINER/restler_bin_atten/restler/../engine/restler.py" --restler_grammar "/home/MINER/restler_bin_atten/Compile/grammar.py" --custom_mutations "/home/MINER/restler_bin_atten/Compile/dict.json" --set_version 7.3.0   --no_ssl   --settings "/home/MINER/restler_bin_atten/Compile/engine_settings.json" --enable_checkers * --disable_checkers namespacerule --time_budget 13.000000   --include_user_agent --no_tokens_in_logs t --garbage_collection_interval 30 --fuzzing_mode bfs-cheap exited with code: 0
+    DateTime=2024-04-23T15:31:15.9036312Z
+Restler Error: 0 : Restler engine failed. See logs in /home/MINER/restler_bin_atten/Fuzz directory for more information. 
+    DateTime=2024-04-23T15:31:21.9018883Z
+Restler Information: 0 : Launching 'dotnet "/home/MINER/restler_bin_atten/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/MINER/restler_bin_atten/Fuzz" --output_dir "/home/MINER/restler_bin_atten/Fuzz/ResponseBuckets" --dictionary_file "/home/MINER/restler_bin_atten/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2024-04-23T15:31:26.2843942Z
+Restler Information: 0 : Process execution terminated in 00:00:39.7905876 with exit code 0x86: 'dotnet "/home/MINER/restler_bin_atten/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/MINER/restler_bin_atten/Fuzz" --output_dir "/home/MINER/restler_bin_atten/Fuzz/ResponseBuckets" --dictionary_file "/home/MINER/restler_bin_atten/Compile/dict.json" --max_instances_per_bucket 10'
+    DateTime=2024-04-23T15:32:06.0751676Z
+Restler Information: 0 : (44939) dotnet "/home/MINER/restler_bin_atten/restler/../resultsAnalyzer/Restler.ResultsAnalyzer.dll" analyze "/home/MINER/restler_bin_atten/Fuzz" --output_dir "/home/MINER/restler_bin_atten/Fuzz/ResponseBuckets" --dictionary_file "/home/MINER/restler_bin_atten/Compile/dict.json" --max_instances_per_bucket 10 exited with code: 134
+    DateTime=2024-04-23T15:32:06.1570115Z
+Restler Error: 0 : Results analyzer for logs in /home/MINER/restler_bin_atten/Fuzz failed.
+    DateTime=2024-04-23T15:32:06.2226590Z
+Restler Information: 0 : Task Fuzz failed.
+    DateTime=2024-04-23T15:32:07.0782413Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2024-04-23T15:32:07.8402923Z
