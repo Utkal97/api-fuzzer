@@ -146,7 +146,7 @@ def upload(request):
                 newfile.write(chunk)
         print(newfile)
         os.chdir('uploadswagger/swagger_files/')
-        restler_dll_path = "dotnet C:/Users/NaraVishnuSai/Desktop/Restler/restler-fuzzer/restler_bin/restler/Restler.dll compile --api_spec "
+        restler_dll_path = "dotnet ../../restlerBin/restler/Restler.dll compile --api_spec "
         command_line_path = restler_dll_path + uploaded_swagger_file.name
         os.system(f'{command_line_path}')
         os.chdir('../../')
