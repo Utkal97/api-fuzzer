@@ -118,7 +118,7 @@ def runMinerFuzz(request):
     #we can comment it out because fuzz command will take 12-13 hours to run, So
     #we have put the Fuzz folder that was generated and tested the results inside the MINER folder
     restler_dll_path = ("dotnet "
-                        "restler/Restler.dll test --grammar_file "
+                        "restler/Restler.dll fuzz --grammar_file "
                         "Compile/grammar.py --dictionary_file "
                         "Compile/dict.json --settings "
                         "Compile/engine_settings.json --no_ssl")
