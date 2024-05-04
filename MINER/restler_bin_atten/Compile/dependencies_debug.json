@@ -3,205 +3,154 @@
     "consumer": {
       "id": {
         "RequestId": {
-          "endpoint": "/api/product",
-          "method": "Post"
+          "endpoint": "/Elixirs",
+          "method": "Get"
         },
         "ResourceReference": {
-          "BodyResource": {
-            "name": "description",
-            "fullPath": {
-              "path": [
-                "description"
-              ]
-            }
-          }
+          "QueryResource": "Name"
         },
-        "ContainerName": "product",
-        "PathContainerName": "product",
+        "ContainerName": "Elixirs",
+        "PathContainerName": "Elixirs",
         "CandidateTypeNames": [
-          "product"
+          "elixir"
         ],
-        "AccessPath": "description",
         "AccessPathParts": {
-          "path": [
-            "description"
-          ]
+          "path": []
         },
-        "ResourceName": "description",
-        "ProducerParameterName": "description",
-        "IsNestedBodyResource": false,
-        "PrimitiveType": "String"
-      },
-      "parameterKind": "Body"
-    }
-  },
-  {
-    "consumer": {
-      "id": {
-        "RequestId": {
-          "endpoint": "/api/product",
-          "method": "Post"
-        },
-        "ResourceReference": {
-          "BodyResource": {
-            "name": "imageUrl",
-            "fullPath": {
-              "path": [
-                "imageUrl"
-              ]
-            }
-          }
-        },
-        "ContainerName": "product",
-        "PathContainerName": "product",
-        "CandidateTypeNames": [
-          "product"
-        ],
-        "AccessPath": "imageUrl",
-        "AccessPathParts": {
-          "path": [
-            "imageUrl"
-          ]
-        },
-        "ResourceName": "imageUrl",
-        "ProducerParameterName": "url",
-        "IsNestedBodyResource": false,
-        "PrimitiveType": "String"
-      },
-      "parameterKind": "Body"
-    }
-  },
-  {
-    "consumer": {
-      "id": {
-        "RequestId": {
-          "endpoint": "/api/product",
-          "method": "Post"
-        },
-        "ResourceReference": {
-          "BodyResource": {
-            "name": "price",
-            "fullPath": {
-              "path": [
-                "price"
-              ]
-            }
-          }
-        },
-        "ContainerName": "product",
-        "PathContainerName": "product",
-        "CandidateTypeNames": [
-          "product"
-        ],
-        "AccessPath": "price",
-        "AccessPathParts": {
-          "path": [
-            "price"
-          ]
-        },
-        "ResourceName": "price",
-        "ProducerParameterName": "price",
-        "IsNestedBodyResource": false,
-        "PrimitiveType": "Number"
-      },
-      "parameterKind": "Body"
-    }
-  },
-  {
-    "consumer": {
-      "id": {
-        "RequestId": {
-          "endpoint": "/api/product",
-          "method": "Post"
-        },
-        "ResourceReference": {
-          "BodyResource": {
-            "name": "productId",
-            "fullPath": {
-              "path": [
-                "productId"
-              ]
-            }
-          }
-        },
-        "ContainerName": "product",
-        "PathContainerName": "product",
-        "CandidateTypeNames": [
-          "product"
-        ],
-        "AccessPath": "productId",
-        "AccessPathParts": {
-          "path": [
-            "productId"
-          ]
-        },
-        "ResourceName": "productId",
-        "ProducerParameterName": "id",
-        "IsNestedBodyResource": false,
-        "PrimitiveType": "Int"
-      },
-      "parameterKind": "Body"
-    }
-  },
-  {
-    "consumer": {
-      "id": {
-        "RequestId": {
-          "endpoint": "/api/product",
-          "method": "Post"
-        },
-        "ResourceReference": {
-          "BodyResource": {
-            "name": "productName",
-            "fullPath": {
-              "path": [
-                "productName"
-              ]
-            }
-          }
-        },
-        "ContainerName": "product",
-        "PathContainerName": "product",
-        "CandidateTypeNames": [
-          "product"
-        ],
-        "AccessPath": "productName",
-        "AccessPathParts": {
-          "path": [
-            "productName"
-          ]
-        },
-        "ResourceName": "productName",
+        "ResourceName": "Name",
         "ProducerParameterName": "name",
         "IsNestedBodyResource": false,
         "PrimitiveType": "String"
       },
-      "parameterKind": "Body"
+      "parameterKind": "Query"
     }
   },
   {
     "consumer": {
       "id": {
         "RequestId": {
-          "endpoint": "/api/product/{id}",
+          "endpoint": "/Elixirs",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "Difficulty"
+        },
+        "ContainerName": "Elixirs",
+        "PathContainerName": "Elixirs",
+        "CandidateTypeNames": [
+          "elixir"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "Difficulty",
+        "ProducerParameterName": "difficulty",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Elixirs",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "Manufacturer"
+        },
+        "ContainerName": "Elixirs",
+        "PathContainerName": "Elixirs",
+        "CandidateTypeNames": [
+          "elixir"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "Manufacturer",
+        "ProducerParameterName": "manufacturer",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Elixirs",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "Ingredient"
+        },
+        "ContainerName": "Elixirs",
+        "PathContainerName": "Elixirs",
+        "CandidateTypeNames": [
+          "elixir"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "Ingredient",
+        "ProducerParameterName": "ingredient",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Elixirs",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "InventorFullName"
+        },
+        "ContainerName": "Elixirs",
+        "PathContainerName": "Elixirs",
+        "CandidateTypeNames": [
+          "elixir"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "InventorFullName",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Elixirs/{id}",
           "method": "Get"
         },
         "ResourceReference": {
           "PathResource": {
             "name": "id",
             "pathToParameter": [
-              "api",
-              "product"
+              "Elixirs"
             ],
             "responsePath": {
               "path": []
             }
           }
         },
-        "ContainerName": "product",
-        "PathContainerName": "product",
+        "ContainerName": "Elixirs",
+        "PathContainerName": "Elixirs",
         "CandidateTypeNames": [
-          "product"
+          "elixir"
         ],
         "AccessPathParts": {
           "path": []
@@ -209,7 +158,7 @@
         "ResourceName": "id",
         "ProducerParameterName": "id",
         "IsNestedBodyResource": false,
-        "PrimitiveType": "Int"
+        "PrimitiveType": "String"
       },
       "parameterKind": "Path"
     }
@@ -218,25 +167,158 @@
     "consumer": {
       "id": {
         "RequestId": {
-          "endpoint": "/api/product/{id}",
-          "method": "Put"
+          "endpoint": "/Feedback",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "entityId",
+            "fullPath": {
+              "path": [
+                "entityId"
+              ]
+            }
+          }
+        },
+        "ContainerName": "Feedback",
+        "PathContainerName": "Feedback",
+        "CandidateTypeNames": [
+          "feedback"
+        ],
+        "AccessPath": "entityId",
+        "AccessPathParts": {
+          "path": [
+            "entityId"
+          ]
+        },
+        "ResourceName": "entityId",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "Uuid"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Feedback",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "feedback",
+            "fullPath": {
+              "path": [
+                "feedback"
+              ]
+            }
+          }
+        },
+        "ContainerName": "Feedback",
+        "PathContainerName": "Feedback",
+        "CandidateTypeNames": [
+          "feedback"
+        ],
+        "AccessPath": "feedback",
+        "AccessPathParts": {
+          "path": [
+            "feedback"
+          ]
+        },
+        "ResourceName": "feedback",
+        "ProducerParameterName": "feedback",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Feedback",
+          "method": "Post"
+        },
+        "ResourceReference": {
+          "BodyResource": {
+            "name": "feedbackType",
+            "fullPath": {
+              "path": [
+                "feedbackType"
+              ]
+            }
+          }
+        },
+        "ContainerName": "Feedback",
+        "PathContainerName": "Feedback",
+        "CandidateTypeNames": [
+          "feedback"
+        ],
+        "AccessPath": "feedbackType",
+        "AccessPathParts": {
+          "path": [
+            "feedbackType"
+          ]
+        },
+        "ResourceName": "feedbackType",
+        "ProducerParameterName": "type",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Body"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Houses",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "query"
+        },
+        "ContainerName": "Houses",
+        "PathContainerName": "Houses",
+        "CandidateTypeNames": [
+          "house"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "query",
+        "ProducerParameterName": "query",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Houses/{id}",
+          "method": "Get"
         },
         "ResourceReference": {
           "PathResource": {
             "name": "id",
             "pathToParameter": [
-              "api",
-              "product"
+              "Houses"
             ],
             "responsePath": {
               "path": []
             }
           }
         },
-        "ContainerName": "product",
-        "PathContainerName": "product",
+        "ContainerName": "Houses",
+        "PathContainerName": "Houses",
         "CandidateTypeNames": [
-          "product"
+          "house"
         ],
         "AccessPathParts": {
           "path": []
@@ -244,222 +326,59 @@
         "ResourceName": "id",
         "ProducerParameterName": "id",
         "IsNestedBodyResource": false,
-        "PrimitiveType": "Int"
+        "PrimitiveType": "String"
       },
       "parameterKind": "Path"
-    },
-    "producer": {
-      "DictionaryPayload": {
-        "payloadType": "UuidSuffix",
-        "primitiveType": "Int",
-        "name": "id",
-        "isObject": false
-      }
     }
   },
   {
     "consumer": {
       "id": {
         "RequestId": {
-          "endpoint": "/api/product/{id}",
-          "method": "Put"
+          "endpoint": "/Ingredients",
+          "method": "Get"
         },
         "ResourceReference": {
-          "BodyResource": {
-            "name": "description",
-            "fullPath": {
-              "path": [
-                "description"
-              ]
-            }
-          }
+          "QueryResource": "Name"
         },
-        "ContainerName": "product",
-        "PathContainerName": "product",
+        "ContainerName": "Ingredients",
+        "PathContainerName": "Ingredients",
         "CandidateTypeNames": [
-          "product"
+          "ingredient"
         ],
-        "AccessPath": "description",
         "AccessPathParts": {
-          "path": [
-            "description"
-          ]
+          "path": []
         },
-        "ResourceName": "description",
-        "ProducerParameterName": "description",
-        "IsNestedBodyResource": false,
-        "PrimitiveType": "String"
-      },
-      "parameterKind": "Body"
-    }
-  },
-  {
-    "consumer": {
-      "id": {
-        "RequestId": {
-          "endpoint": "/api/product/{id}",
-          "method": "Put"
-        },
-        "ResourceReference": {
-          "BodyResource": {
-            "name": "imageUrl",
-            "fullPath": {
-              "path": [
-                "imageUrl"
-              ]
-            }
-          }
-        },
-        "ContainerName": "product",
-        "PathContainerName": "product",
-        "CandidateTypeNames": [
-          "product"
-        ],
-        "AccessPath": "imageUrl",
-        "AccessPathParts": {
-          "path": [
-            "imageUrl"
-          ]
-        },
-        "ResourceName": "imageUrl",
-        "ProducerParameterName": "url",
-        "IsNestedBodyResource": false,
-        "PrimitiveType": "String"
-      },
-      "parameterKind": "Body"
-    }
-  },
-  {
-    "consumer": {
-      "id": {
-        "RequestId": {
-          "endpoint": "/api/product/{id}",
-          "method": "Put"
-        },
-        "ResourceReference": {
-          "BodyResource": {
-            "name": "price",
-            "fullPath": {
-              "path": [
-                "price"
-              ]
-            }
-          }
-        },
-        "ContainerName": "product",
-        "PathContainerName": "product",
-        "CandidateTypeNames": [
-          "product"
-        ],
-        "AccessPath": "price",
-        "AccessPathParts": {
-          "path": [
-            "price"
-          ]
-        },
-        "ResourceName": "price",
-        "ProducerParameterName": "price",
-        "IsNestedBodyResource": false,
-        "PrimitiveType": "Number"
-      },
-      "parameterKind": "Body"
-    }
-  },
-  {
-    "consumer": {
-      "id": {
-        "RequestId": {
-          "endpoint": "/api/product/{id}",
-          "method": "Put"
-        },
-        "ResourceReference": {
-          "BodyResource": {
-            "name": "productId",
-            "fullPath": {
-              "path": [
-                "productId"
-              ]
-            }
-          }
-        },
-        "ContainerName": "product",
-        "PathContainerName": "product",
-        "CandidateTypeNames": [
-          "product"
-        ],
-        "AccessPath": "productId",
-        "AccessPathParts": {
-          "path": [
-            "productId"
-          ]
-        },
-        "ResourceName": "productId",
-        "ProducerParameterName": "id",
-        "IsNestedBodyResource": false,
-        "PrimitiveType": "Int"
-      },
-      "parameterKind": "Body"
-    }
-  },
-  {
-    "consumer": {
-      "id": {
-        "RequestId": {
-          "endpoint": "/api/product/{id}",
-          "method": "Put"
-        },
-        "ResourceReference": {
-          "BodyResource": {
-            "name": "productName",
-            "fullPath": {
-              "path": [
-                "productName"
-              ]
-            }
-          }
-        },
-        "ContainerName": "product",
-        "PathContainerName": "product",
-        "CandidateTypeNames": [
-          "product"
-        ],
-        "AccessPath": "productName",
-        "AccessPathParts": {
-          "path": [
-            "productName"
-          ]
-        },
-        "ResourceName": "productName",
+        "ResourceName": "Name",
         "ProducerParameterName": "name",
         "IsNestedBodyResource": false,
         "PrimitiveType": "String"
       },
-      "parameterKind": "Body"
+      "parameterKind": "Query"
     }
   },
   {
     "consumer": {
       "id": {
         "RequestId": {
-          "endpoint": "/api/product/{id}",
-          "method": "Delete"
+          "endpoint": "/Ingredients/{id}",
+          "method": "Get"
         },
         "ResourceReference": {
           "PathResource": {
             "name": "id",
             "pathToParameter": [
-              "api",
-              "product"
+              "Ingredients"
             ],
             "responsePath": {
               "path": []
             }
           }
         },
-        "ContainerName": "product",
-        "PathContainerName": "product",
+        "ContainerName": "Ingredients",
+        "PathContainerName": "Ingredients",
         "CandidateTypeNames": [
-          "product"
+          "ingredient"
         ],
         "AccessPathParts": {
           "path": []
@@ -467,7 +386,205 @@
         "ResourceName": "id",
         "ProducerParameterName": "id",
         "IsNestedBodyResource": false,
-        "PrimitiveType": "Int"
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Spells",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "Name"
+        },
+        "ContainerName": "Spells",
+        "PathContainerName": "Spells",
+        "CandidateTypeNames": [
+          "spell"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "Name",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Spells",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "Type"
+        },
+        "ContainerName": "Spells",
+        "PathContainerName": "Spells",
+        "CandidateTypeNames": [
+          "spell"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "Type",
+        "ProducerParameterName": "type",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Spells",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "Incantation"
+        },
+        "ContainerName": "Spells",
+        "PathContainerName": "Spells",
+        "CandidateTypeNames": [
+          "spell"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "Incantation",
+        "ProducerParameterName": "incantation",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Spells/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "Spells"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Spells",
+        "PathContainerName": "Spells",
+        "CandidateTypeNames": [
+          "spell"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Path"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Wizards",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "FirstName"
+        },
+        "ContainerName": "Wizards",
+        "PathContainerName": "Wizards",
+        "CandidateTypeNames": [
+          "wizard"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "FirstName",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Wizards",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "QueryResource": "LastName"
+        },
+        "ContainerName": "Wizards",
+        "PathContainerName": "Wizards",
+        "CandidateTypeNames": [
+          "wizard"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "LastName",
+        "ProducerParameterName": "name",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
+      },
+      "parameterKind": "Query"
+    }
+  },
+  {
+    "consumer": {
+      "id": {
+        "RequestId": {
+          "endpoint": "/Wizards/{id}",
+          "method": "Get"
+        },
+        "ResourceReference": {
+          "PathResource": {
+            "name": "id",
+            "pathToParameter": [
+              "Wizards"
+            ],
+            "responsePath": {
+              "path": []
+            }
+          }
+        },
+        "ContainerName": "Wizards",
+        "PathContainerName": "Wizards",
+        "CandidateTypeNames": [
+          "wizard"
+        ],
+        "AccessPathParts": {
+          "path": []
+        },
+        "ResourceName": "id",
+        "ProducerParameterName": "id",
+        "IsNestedBodyResource": false,
+        "PrimitiveType": "String"
       },
       "parameterKind": "Path"
     }

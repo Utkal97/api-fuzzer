@@ -1,140 +1,147 @@
-[5/4/2024 12:59:09 PM] Generating grammar...
-[5/4/2024 12:59:09 PM] Getting requests...
-[5/4/2024 12:59:10 PM] Getting dependencies...
-[5/4/2024 12:59:10 PM] Getting path consumers...
-[5/4/2024 12:59:10 PM] Getting query consumers...
-[5/4/2024 12:59:10 PM] Getting header consumers...
-[5/4/2024 12:59:10 PM] Getting body consumers...
-[5/4/2024 12:59:10 PM] Getting producers...
-[5/4/2024 12:59:10 PM] Done processing producers
-[5/4/2024 12:59:10 PM] Compute dependencies
-[[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Generating grammar...
+[4/22/2024 9:15:54 PM] Getting requests...
+[4/22/2024 9:15:54 PM] Getting dependencies...
+[4/22/2024 9:15:54 PM] Getting consumers...
+[4/22/2024 9:15:54 PM] Getting producers...
+[4/22/2024 9:15:54 PM] Done processing producers
+[4/22/2024 9:15:54 PM] Compute dependencies
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Ingredients"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Elixirs"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Ingredients"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Elixirs/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Wizards/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Elixirs"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Feedback"
   method = Post }
-[[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/products"
-  xMsPath = None
-  method = Get }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/products"
-  xMsPath = None
-  method = Get }
-5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Delete }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Get }
-5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Get }
-[[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/products"
-  xMsPath = None
-  method = Get }
-5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Feedback"
   method = Post }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Ingredients/{id}"
   method = Get }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/products"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Elixirs/{id}"
   method = Get }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Delete }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Houses"
   method = Get }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/products"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Wizards/{id}"
   method = Get }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Houses"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Houses/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Ingredients/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Ingredients/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Spells"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Spells"
+  method = Get }
+[[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Ingredients/{id}"
+  method = Get }
+4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Spells/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Elixirs/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Houses/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Spells"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Ingredients"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Spells"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Spells/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Spells/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Elixirs/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Wizards"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Wizards"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Wizards/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Wizards/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Elixirs"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Elixirs"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Elixirs/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Elixirs/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Feedback"
   method = Post }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Put }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Feedback"
   method = Post }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Put }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Ingredients"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Wizards"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Wizards"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Houses"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Spells/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Wizards"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Feedback"
   method = Post }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/products"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Wizards"
   method = Get }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Houses"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Feedback"
   method = Post }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Put }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Put }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Delete }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Houses"
   method = Get }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Delete }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Delete }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Houses"
   method = Get }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Delete }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/products"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Houses/{id}"
   method = Get }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/products"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Houses/{id}"
   method = Get }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Delete }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Ingredients"
   method = Get }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Put }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product"
-  xMsPath = None
-  method = Post }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Delete }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Ingredients"
   method = Get }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Put }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product"
-  xMsPath = None
-  method = Post }
-[5/4/2024 12:59:10 PM] Second pass dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Put }
-[5/4/2024 12:59:10 PM] Done dependencies for request { endpoint = "/api/product/{id}"
-  xMsPath = None
-  method = Put }
-[5/4/2024 12:59:10 PM] Assigning equality constraints...
-[5/4/2024 12:59:10 PM] Getting ordering constraints...
-[5/4/2024 12:59:10 PM] Dependency analysis completed.
-[5/4/2024 12:59:10 PM] Generating request primitives...
-Writing new dictionary to C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\MINER\restler_bin_atten\Compile\dict.json
-[5/4/2024 12:59:10 PM] Generating python grammar...
-[5/4/2024 12:59:10 PM] Get requests
-[5/4/2024 12:59:10 PM] Done get requests
-[5/4/2024 12:59:10 PM] Done generating python grammar.
-Workflow completed.  See C:\Users\NaraVishnuSai\Desktop\django_ui\api-fuzzer\MINER\restler_bin_atten\Compile for REST-ler grammar.
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Ingredients/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Ingredients/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Wizards/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Houses/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Wizards/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Houses/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Elixirs"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Elixirs"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Spells"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Spells"
+  method = Get }
+[4/22/2024 9:15:54 PM] Second pass dependencies for request { endpoint = "/Spells/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Done dependencies for request { endpoint = "/Spells/{id}"
+  method = Get }
+[4/22/2024 9:15:54 PM] Dependency analysis completed.
+[4/22/2024 9:15:54 PM] Generating request primitives...
+Writing new dictionary to /home/MINER/restler_bin_atten/Compile/dict.json
+[4/22/2024 9:15:54 PM] Generating python grammar...
+[4/22/2024 9:15:54 PM] Get requests
+[4/22/2024 9:15:54 PM] Done get requests
+[4/22/2024 9:15:54 PM] Done generating python grammar.
+Workflow completed.  See /home/MINER/restler_bin_atten/Compile for REST-ler grammar.

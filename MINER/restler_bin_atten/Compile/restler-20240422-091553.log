@@ -1,0 +1,12 @@
+Restler Information: 0 : Starting task Compile...
+    DateTime=2024-04-23T01:15:53.4105382Z
+Restler Information: 0 : Launching 'dotnet "/home/MINER/restler_bin_atten/restler/../compiler/Restler.CompilerExe.dll" "/home/MINER/restler_bin_atten/Compile/config.json"'
+    DateTime=2024-04-23T01:15:53.7210799Z
+Restler Information: 0 : Process execution terminated in 00:00:01.2746133 with exit code 0x0: 'dotnet "/home/MINER/restler_bin_atten/restler/../compiler/Restler.CompilerExe.dll" "/home/MINER/restler_bin_atten/Compile/config.json"'
+    DateTime=2024-04-23T01:15:55.0026579Z
+Restler Information: 0 : (22991) dotnet "/home/MINER/restler_bin_atten/restler/../compiler/Restler.CompilerExe.dll" "/home/MINER/restler_bin_atten/Compile/config.json" exited with code: 0
+    DateTime=2024-04-23T01:15:55.0075604Z
+Restler Information: 0 : Task Compile succeeded.
+    DateTime=2024-04-23T01:15:55.0163707Z
+Restler Information: 0 : Collecting logs...
+    DateTime=2024-04-23T01:15:55.0205507Z

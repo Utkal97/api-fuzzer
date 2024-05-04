@@ -1,23 +1,18 @@
 {
   "SwaggerSpecFilePath": [
-    "C:\\Users\\NaraVishnuSai\\Desktop\\django_ui\\api-fuzzer\\MINER\\restler_bin_atten\\swagger_file.json"
+    "/home/MINER/restler_bin_atten/wizard_swagger.json"
   ],
-  "GrammarOutputDirectoryPath": "C:\\Users\\NaraVishnuSai\\Desktop\\django_ui\\api-fuzzer\\MINER\\restler_bin_atten\\Compile",
-  "CustomDictionaryFilePath": "C:\\Users\\NaraVishnuSai\\Desktop\\django_ui\\api-fuzzer\\MINER\\restler_bin_atten\\Compile\\defaultDict.json",
+  "GrammarOutputDirectoryPath": "/home/MINER/restler_bin_atten/Compile",
+  "CustomDictionaryFilePath": "/home/MINER/restler_bin_atten/Compile/defaultDict.json",
   "IncludeOptionalParameters": true,
-  "UseHeaderExamples": true,
-  "UsePathExamples": false,
   "UseQueryExamples": true,
   "UseBodyExamples": true,
-  "UseAllExamplePayloads": false,
   "DiscoverExamples": false,
   "ExamplesDirectory": "",
   "DataFuzzing": true,
   "ReadOnlyFuzz": false,
   "ResolveQueryDependencies": true,
   "ResolveBodyDependencies": true,
-  "ResolveHeaderDependencies": false,
   "UseRefreshableToken": true,
-  "AllowGetProducers": false,
-  "TrackFuzzedParameterNames": false
+  "AllowGetProducers": false
 }

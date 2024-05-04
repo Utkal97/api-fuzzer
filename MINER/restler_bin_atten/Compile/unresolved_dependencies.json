@@ -1,51 +1,41 @@
 {
-  "/api/product": {
-    "POST": {
-      "Body": [
+  "/Elixirs": {
+    "GET": {
+      "Query": [
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "description"
+          "consumer_param": "Difficulty"
         },
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "imageUrl"
+          "consumer_param": "Ingredient"
         },
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "price"
+          "consumer_param": "InventorFullName"
         },
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "productId"
+          "consumer_param": "Manufacturer"
         },
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "productName"
+          "consumer_param": "Name"
         }
       ]
     }
   },
-  "/api/product/{id}": {
-    "DELETE": {
-      "Path": [
-        {
-          "producer_endpoint": "",
-          "producer_method": "",
-          "producer_resource_name": "",
-          "consumer_param": "id"
-        }
-      ]
-    },
+  "/Elixirs/{id}": {
     "GET": {
       "Path": [
         {
@@ -55,38 +45,142 @@
           "consumer_param": "id"
         }
       ]
-    },
-    "PUT": {
+    }
+  },
+  "/Feedback": {
+    "POST": {
       "Body": [
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "description"
+          "consumer_param": "entityId"
         },
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "imageUrl"
+          "consumer_param": "feedback"
         },
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "price"
+          "consumer_param": "feedbackType"
+        }
+      ]
+    }
+  },
+  "/Houses": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "query"
+        }
+      ]
+    }
+  },
+  "/Houses/{id}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "id"
+        }
+      ]
+    }
+  },
+  "/Ingredients": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "Name"
+        }
+      ]
+    }
+  },
+  "/Ingredients/{id}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "id"
+        }
+      ]
+    }
+  },
+  "/Spells": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "Incantation"
         },
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "productId"
+          "consumer_param": "Name"
         },
         {
           "producer_endpoint": "",
           "producer_method": "",
           "producer_resource_name": "",
-          "consumer_param": "productName"
+          "consumer_param": "Type"
+        }
+      ]
+    }
+  },
+  "/Spells/{id}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "id"
+        }
+      ]
+    }
+  },
+  "/Wizards": {
+    "GET": {
+      "Query": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "FirstName"
+        },
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "LastName"
+        }
+      ]
+    }
+  },
+  "/Wizards/{id}": {
+    "GET": {
+      "Path": [
+        {
+          "producer_endpoint": "",
+          "producer_method": "",
+          "producer_resource_name": "",
+          "consumer_param": "id"
         }
       ]
     }

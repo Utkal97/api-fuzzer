@@ -6,145 +6,239 @@ from engine.core import requests
 from engine.errors import ResponseParsingException
 from engine import dependencies
 req_collection = requests.RequestCollection([])
-# Endpoint: /api/product, method: Post
+# Endpoint: /Elixirs, method: Get
+request = requests.Request([
+    primitives.restler_static_string("GET "),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("Elixirs"),
+    primitives.restler_static_string("?"),
+    primitives.restler_static_string("Name="),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=False),
+    primitives.restler_static_string("&"),
+    primitives.restler_static_string("Difficulty="),
+    primitives.restler_fuzzable_group("fuzzable_group_tag", ['Unknown','Advanced','Moderate','Beginner','OrdinaryWizardingLevel','OneOfAKind']  ,quoted=False),
+    primitives.restler_static_string("&"),
+    primitives.restler_static_string("Ingredient="),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=False),
+    primitives.restler_static_string("&"),
+    primitives.restler_static_string("InventorFullName="),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=False),
+    primitives.restler_static_string("&"),
+    primitives.restler_static_string("Manufacturer="),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=False),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/Elixirs"
+)
+req_collection.add_request(request)
+
+# Endpoint: /Elixirs/{id}, method: Get
+request = requests.Request([
+    primitives.restler_static_string("GET "),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("Elixirs"),
+    primitives.restler_static_string("/"),
+    primitives.restler_fuzzable_uuid4("566048da-ed19-4cd3-8e0a-b7e0e1ec4d72", quoted=False),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/Elixirs/{id}"
+)
+req_collection.add_request(request)
+
+# Endpoint: /Feedback, method: Post
 request = requests.Request([
     primitives.restler_static_string("POST "),
-    primitives.restler_basepath(""),
     primitives.restler_static_string("/"),
-    primitives.restler_static_string("api"),
-    primitives.restler_static_string("/"),
-    primitives.restler_static_string("product"),
+    primitives.restler_static_string("Feedback"),
     primitives.restler_static_string(" HTTP/1.1\r\n"),
     primitives.restler_static_string("Accept: application/json\r\n"),
-    primitives.restler_static_string("Host: localhost:8080\r\n"),
-    primitives.restler_static_string("Content-Type: "),
-    primitives.restler_static_string("application/json"),
-    primitives.restler_static_string("\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
+    primitives.restler_static_string("Content-Type: application/json\r\n"),
     primitives.restler_refreshable_authentication_token("authentication_token_tag"),
     primitives.restler_static_string("\r\n"),
     primitives.restler_static_string("{"),
     primitives.restler_static_string("""
-    "description":"""),
-    primitives.restler_fuzzable_string("fuzzstring", quoted=True),
-    primitives.restler_static_string(""",
-    "imageUrl":"""),
-    primitives.restler_fuzzable_string("fuzzstring", quoted=True),
-    primitives.restler_static_string(""",
-    "price":"""),
-    primitives.restler_fuzzable_number("1.23"),
-    primitives.restler_static_string(""",
-    "productId":"""),
-    primitives.restler_fuzzable_int("1"),
-    primitives.restler_static_string(""",
-    "productName":"""),
-    primitives.restler_fuzzable_string("fuzzstring", quoted=True),
-    primitives.restler_static_string("}"),
-    primitives.restler_static_string("\r\n"),
-
-],
-requestId="/api/product"
-)
-req_collection.add_request(request)
-
-# Endpoint: /api/product/{id}, method: Get
-request = requests.Request([
-    primitives.restler_static_string("GET "),
-    primitives.restler_basepath(""),
-    primitives.restler_static_string("/"),
-    primitives.restler_static_string("api"),
-    primitives.restler_static_string("/"),
-    primitives.restler_static_string("product"),
-    primitives.restler_static_string("/"),
-    primitives.restler_fuzzable_int("1"),
-    primitives.restler_static_string(" HTTP/1.1\r\n"),
-    primitives.restler_static_string("Accept: application/json\r\n"),
-    primitives.restler_static_string("Host: localhost:8080\r\n"),
-    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
-    primitives.restler_static_string("\r\n"),
-
-],
-requestId="/api/product/{id}"
-)
-req_collection.add_request(request)
-
-# Endpoint: /api/product/{id}, method: Put
-request = requests.Request([
-    primitives.restler_static_string("PUT "),
-    primitives.restler_basepath(""),
-    primitives.restler_static_string("/"),
-    primitives.restler_static_string("api"),
-    primitives.restler_static_string("/"),
-    primitives.restler_static_string("product"),
-    primitives.restler_static_string("/"),
-    primitives.restler_custom_payload_uuid4_suffix("id", quoted=False),
-    primitives.restler_static_string(" HTTP/1.1\r\n"),
-    primitives.restler_static_string("Accept: application/json\r\n"),
-    primitives.restler_static_string("Host: localhost:8080\r\n"),
-    primitives.restler_static_string("Content-Type: "),
-    primitives.restler_static_string("application/json"),
-    primitives.restler_static_string("\r\n"),
-    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
-    primitives.restler_static_string("\r\n"),
-    primitives.restler_static_string("{"),
+    "feedbackType":
+        """),
+    primitives.restler_fuzzable_group("fuzzable_group_tag", ['General','Bug','DataError','Suggestion']  ,quoted=True),
     primitives.restler_static_string("""
-    "description":"""),
+    ,
+    "feedback":"""),
     primitives.restler_fuzzable_string("fuzzstring", quoted=True),
     primitives.restler_static_string(""",
-    "imageUrl":"""),
-    primitives.restler_fuzzable_string("fuzzstring", quoted=True),
-    primitives.restler_static_string(""",
-    "price":"""),
-    primitives.restler_fuzzable_number("1.23"),
-    primitives.restler_static_string(""",
-    "productId":"""),
-    primitives.restler_fuzzable_int("1"),
-    primitives.restler_static_string(""",
-    "productName":"""),
-    primitives.restler_fuzzable_string("fuzzstring", quoted=True),
+    "entityId":"""),
+    primitives.restler_fuzzable_uuid4("566048da-ed19-4cd3-8e0a-b7e0e1ec4d72", quoted=True),
     primitives.restler_static_string("}"),
     primitives.restler_static_string("\r\n"),
 
 ],
-requestId="/api/product/{id}"
+requestId="/Feedback"
 )
 req_collection.add_request(request)
 
-# Endpoint: /api/product/{id}, method: Delete
-request = requests.Request([
-    primitives.restler_static_string("DELETE "),
-    primitives.restler_basepath(""),
-    primitives.restler_static_string("/"),
-    primitives.restler_static_string("api"),
-    primitives.restler_static_string("/"),
-    primitives.restler_static_string("product"),
-    primitives.restler_static_string("/"),
-    primitives.restler_fuzzable_int("1"),
-    primitives.restler_static_string(" HTTP/1.1\r\n"),
-    primitives.restler_static_string("Accept: application/json\r\n"),
-    primitives.restler_static_string("Host: localhost:8080\r\n"),
-    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
-    primitives.restler_static_string("\r\n"),
-
-],
-requestId="/api/product/{id}"
-)
-req_collection.add_request(request)
-
-# Endpoint: /api/products, method: Get
+# Endpoint: /Houses, method: Get
 request = requests.Request([
     primitives.restler_static_string("GET "),
-    primitives.restler_basepath(""),
     primitives.restler_static_string("/"),
-    primitives.restler_static_string("api"),
-    primitives.restler_static_string("/"),
-    primitives.restler_static_string("products"),
+    primitives.restler_static_string("Houses"),
+    primitives.restler_static_string("?"),
+    primitives.restler_static_string("query="),
+    primitives.restler_fuzzable_object("{ \"fuzz\": false }"),
     primitives.restler_static_string(" HTTP/1.1\r\n"),
     primitives.restler_static_string("Accept: application/json\r\n"),
-    primitives.restler_static_string("Host: localhost:8080\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
     primitives.restler_refreshable_authentication_token("authentication_token_tag"),
     primitives.restler_static_string("\r\n"),
 
 ],
-requestId="/api/products"
+requestId="/Houses"
+)
+req_collection.add_request(request)
+
+# Endpoint: /Houses/{id}, method: Get
+request = requests.Request([
+    primitives.restler_static_string("GET "),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("Houses"),
+    primitives.restler_static_string("/"),
+    primitives.restler_fuzzable_uuid4("566048da-ed19-4cd3-8e0a-b7e0e1ec4d72", quoted=False),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/Houses/{id}"
+)
+req_collection.add_request(request)
+
+# Endpoint: /Ingredients, method: Get
+request = requests.Request([
+    primitives.restler_static_string("GET "),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("Ingredients"),
+    primitives.restler_static_string("?"),
+    primitives.restler_static_string("Name="),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=False),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/Ingredients"
+)
+req_collection.add_request(request)
+
+# Endpoint: /Ingredients/{id}, method: Get
+request = requests.Request([
+    primitives.restler_static_string("GET "),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("Ingredients"),
+    primitives.restler_static_string("/"),
+    primitives.restler_fuzzable_uuid4("566048da-ed19-4cd3-8e0a-b7e0e1ec4d72", quoted=False),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/Ingredients/{id}"
+)
+req_collection.add_request(request)
+
+# Endpoint: /Spells, method: Get
+request = requests.Request([
+    primitives.restler_static_string("GET "),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("Spells"),
+    primitives.restler_static_string("?"),
+    primitives.restler_static_string("Name="),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=False),
+    primitives.restler_static_string("&"),
+    primitives.restler_static_string("Type="),
+    primitives.restler_fuzzable_group("fuzzable_group_tag", ['None','Charm','Conjuration','Spell','Transfiguration','HealingSpell','DarkCharm','Jinx','Curse','MagicalTransportation','Hex','CounterSpell','DarkArts','CounterJinx','CounterCharm','Untransfiguration','BindingMagicalContract','Vanishment']  ,quoted=False),
+    primitives.restler_static_string("&"),
+    primitives.restler_static_string("Incantation="),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=False),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/Spells"
+)
+req_collection.add_request(request)
+
+# Endpoint: /Spells/{id}, method: Get
+request = requests.Request([
+    primitives.restler_static_string("GET "),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("Spells"),
+    primitives.restler_static_string("/"),
+    primitives.restler_fuzzable_uuid4("566048da-ed19-4cd3-8e0a-b7e0e1ec4d72", quoted=False),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/Spells/{id}"
+)
+req_collection.add_request(request)
+
+# Endpoint: /Wizards, method: Get
+request = requests.Request([
+    primitives.restler_static_string("GET "),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("Wizards"),
+    primitives.restler_static_string("?"),
+    primitives.restler_static_string("FirstName="),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=False),
+    primitives.restler_static_string("&"),
+    primitives.restler_static_string("LastName="),
+    primitives.restler_fuzzable_string("fuzzstring", quoted=False),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/Wizards"
+)
+req_collection.add_request(request)
+
+# Endpoint: /Wizards/{id}, method: Get
+request = requests.Request([
+    primitives.restler_static_string("GET "),
+    primitives.restler_static_string("/"),
+    primitives.restler_static_string("Wizards"),
+    primitives.restler_static_string("/"),
+    primitives.restler_fuzzable_uuid4("566048da-ed19-4cd3-8e0a-b7e0e1ec4d72", quoted=False),
+    primitives.restler_static_string(" HTTP/1.1\r\n"),
+    primitives.restler_static_string("Accept: application/json\r\n"),
+    primitives.restler_static_string("Host: wizard-world-api.herokuapp.com\r\n"),
+    primitives.restler_refreshable_authentication_token("authentication_token_tag"),
+    primitives.restler_static_string("\r\n"),
+
+],
+requestId="/Wizards/{id}"
 )
 req_collection.add_request(request)

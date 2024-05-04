@@ -2,34 +2,207 @@
   "Requests": [
     {
       "id": {
-        "endpoint": "/api/product",
+        "endpoint": "/Elixirs",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "Elixirs"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "Name",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "Difficulty",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "String",
+                            [
+                              "Unknown",
+                              "Advanced",
+                              "Moderate",
+                              "Beginner",
+                              "OrdinaryWizardingLevel",
+                              "OneOfAKind"
+                            ],
+                            null
+                          ]
+                        },
+                        "Unknown"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "Ingredient",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "InventorFullName",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "Manufacturer",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "wizard-world-api.herokuapp.com"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/Elixirs/{id}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "Elixirs"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "Uuid",
+            "566048da-ed19-4cd3-8e0a-b7e0e1ec4d72"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "wizard-world-api.herokuapp.com"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/Feedback",
         "method": "Post"
       },
       "method": "Post",
-      "basePath": "",
       "path": [
         {
           "Constant": [
             "String",
-            "/"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "api"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "product"
+            "Feedback"
           ]
         }
       ],
@@ -46,9 +219,9 @@
           "Schema",
           {
             "ParameterList": [
-              {
-                "name": "product",
-                "payload": {
+              [
+                "body",
+                {
                   "InternalNode": [
                     {
                       "name": "",
@@ -58,13 +231,49 @@
                     },
                     [
                       {
-                        "LeafNode": {
-                          "name": "description",
-                          "payload": {
-                            "Fuzzable": {
-                              "primitiveType": "String",
-                              "defaultValue": "fuzzstring"
+                        "InternalNode": [
+                          {
+                            "name": "feedbackType",
+                            "propertyType": "Property",
+                            "isRequired": true,
+                            "isReadOnly": false
+                          },
+                          [
+                            {
+                              "LeafNode": {
+                                "name": "",
+                                "payload": {
+                                  "Fuzzable": [
+                                    {
+                                      "Enum": [
+                                        "String",
+                                        [
+                                          "General",
+                                          "Bug",
+                                          "DataError",
+                                          "Suggestion"
+                                        ],
+                                        null
+                                      ]
+                                    },
+                                    "General"
+                                  ]
+                                },
+                                "isRequired": true,
+                                "isReadOnly": false
+                              }
                             }
+                          ]
+                        ]
+                      },
+                      {
+                        "LeafNode": {
+                          "name": "feedback",
+                          "payload": {
+                            "Fuzzable": [
+                              "String",
+                              "fuzzstring"
+                            ]
                           },
                           "isRequired": false,
                           "isReadOnly": false
@@ -72,333 +281,12 @@
                       },
                       {
                         "LeafNode": {
-                          "name": "imageUrl",
+                          "name": "entityId",
                           "payload": {
-                            "Fuzzable": {
-                              "primitiveType": "String",
-                              "defaultValue": "fuzzstring"
-                            }
-                          },
-                          "isRequired": false,
-                          "isReadOnly": false
-                        }
-                      },
-                      {
-                        "LeafNode": {
-                          "name": "price",
-                          "payload": {
-                            "Fuzzable": {
-                              "primitiveType": "Number",
-                              "defaultValue": "1.23"
-                            }
-                          },
-                          "isRequired": true,
-                          "isReadOnly": false
-                        }
-                      },
-                      {
-                        "LeafNode": {
-                          "name": "productId",
-                          "payload": {
-                            "Fuzzable": {
-                              "primitiveType": "Int",
-                              "defaultValue": "1"
-                            }
-                          },
-                          "isRequired": false,
-                          "isReadOnly": false
-                        }
-                      },
-                      {
-                        "LeafNode": {
-                          "name": "productName",
-                          "payload": {
-                            "Fuzzable": {
-                              "primitiveType": "String",
-                              "defaultValue": "fuzzstring"
-                            }
-                          },
-                          "isRequired": false,
-                          "isReadOnly": false
-                        }
-                      }
-                    ]
-                  ]
-                }
-              }
-            ]
-          }
-        ]
-      ],
-      "headerParameters": [
-        [
-          "Schema",
-          {
-            "ParameterList": []
-          }
-        ],
-        [
-          "DictionaryCustomPayload",
-          {
-            "ParameterList": [
-              {
-                "name": "Content-Type",
-                "payload": {
-                  "LeafNode": {
-                    "name": "",
-                    "payload": {
-                      "Constant": [
-                        "String",
-                        "application/json"
-                      ]
-                    },
-                    "isRequired": true,
-                    "isReadOnly": false
-                  }
-                }
-              }
-            ]
-          }
-        ]
-      ],
-      "token": "Refreshable",
-      "headers": [
-        [
-          "Accept",
-          "application/json"
-        ],
-        [
-          "Host",
-          "localhost:8080"
-        ]
-      ],
-      "httpVersion": "1.1",
-      "requestMetadata": {
-        "isLongRunningOperation": false
-      }
-    },
-    {
-      "id": {
-        "endpoint": "/api/product/{id}",
-        "method": "Get"
-      },
-      "method": "Get",
-      "basePath": "",
-      "path": [
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "api"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "product"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Fuzzable": {
-            "primitiveType": "Int",
-            "defaultValue": "1"
-          }
-        }
-      ],
-      "queryParameters": [
-        [
-          "Schema",
-          {
-            "ParameterList": []
-          }
-        ]
-      ],
-      "bodyParameters": [
-        [
-          "Schema",
-          {
-            "ParameterList": []
-          }
-        ]
-      ],
-      "headerParameters": [
-        [
-          "Schema",
-          {
-            "ParameterList": []
-          }
-        ],
-        [
-          "DictionaryCustomPayload",
-          {
-            "ParameterList": []
-          }
-        ]
-      ],
-      "token": "Refreshable",
-      "headers": [
-        [
-          "Accept",
-          "application/json"
-        ],
-        [
-          "Host",
-          "localhost:8080"
-        ]
-      ],
-      "httpVersion": "1.1",
-      "requestMetadata": {
-        "isLongRunningOperation": false
-      }
-    },
-    {
-      "id": {
-        "endpoint": "/api/product/{id}",
-        "method": "Put"
-      },
-      "method": "Put",
-      "basePath": "",
-      "path": [
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "api"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "product"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Custom": {
-            "payloadType": "UuidSuffix",
-            "primitiveType": "Int",
-            "payloadValue": "id",
-            "isObject": false
-          }
-        }
-      ],
-      "queryParameters": [
-        [
-          "Schema",
-          {
-            "ParameterList": []
-          }
-        ]
-      ],
-      "bodyParameters": [
-        [
-          "Schema",
-          {
-            "ParameterList": [
-              {
-                "name": "product",
-                "payload": {
-                  "InternalNode": [
-                    {
-                      "name": "",
-                      "propertyType": "Object",
-                      "isRequired": true,
-                      "isReadOnly": false
-                    },
-                    [
-                      {
-                        "LeafNode": {
-                          "name": "description",
-                          "payload": {
-                            "Fuzzable": {
-                              "primitiveType": "String",
-                              "defaultValue": "fuzzstring"
-                            }
-                          },
-                          "isRequired": false,
-                          "isReadOnly": false
-                        }
-                      },
-                      {
-                        "LeafNode": {
-                          "name": "imageUrl",
-                          "payload": {
-                            "Fuzzable": {
-                              "primitiveType": "String",
-                              "defaultValue": "fuzzstring"
-                            }
-                          },
-                          "isRequired": false,
-                          "isReadOnly": false
-                        }
-                      },
-                      {
-                        "LeafNode": {
-                          "name": "price",
-                          "payload": {
-                            "Fuzzable": {
-                              "primitiveType": "Number",
-                              "defaultValue": "1.23"
-                            }
-                          },
-                          "isRequired": true,
-                          "isReadOnly": false
-                        }
-                      },
-                      {
-                        "LeafNode": {
-                          "name": "productId",
-                          "payload": {
-                            "Fuzzable": {
-                              "primitiveType": "Int",
-                              "defaultValue": "1"
-                            }
-                          },
-                          "isRequired": false,
-                          "isReadOnly": false
-                        }
-                      },
-                      {
-                        "LeafNode": {
-                          "name": "productName",
-                          "payload": {
-                            "Fuzzable": {
-                              "primitiveType": "String",
-                              "defaultValue": "fuzzstring"
-                            }
+                            "Fuzzable": [
+                              "Uuid",
+                              "566048da-ed19-4cd3-8e0a-b7e0e1ec4d72"
+                            ]
                           },
                           "isRequired": false,
                           "isReadOnly": false
@@ -407,111 +295,70 @@
                     ]
                   ]
                 }
-              }
+              ]
             ]
           }
         ]
       ],
-      "headerParameters": [
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "wizard-world-api.herokuapp.com"
+        ],
+        [
+          "Content-Type",
+          "application/json"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/Houses",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "Houses"
+          ]
+        }
+      ],
+      "queryParameters": [
         [
           "Schema",
           {
-            "ParameterList": []
-          }
-        ],
-        [
-          "DictionaryCustomPayload",
-          {
             "ParameterList": [
-              {
-                "name": "Content-Type",
-                "payload": {
+              [
+                "query",
+                {
                   "LeafNode": {
                     "name": "",
                     "payload": {
-                      "Constant": [
-                        "String",
-                        "application/json"
+                      "Fuzzable": [
+                        "Object",
+                        "{ \"fuzz\": false }"
                       ]
                     },
                     "isRequired": true,
                     "isReadOnly": false
                   }
                 }
-              }
+              ]
             ]
           }
         ]
       ],
-      "token": "Refreshable",
-      "headers": [
-        [
-          "Accept",
-          "application/json"
-        ],
-        [
-          "Host",
-          "localhost:8080"
-        ]
-      ],
-      "httpVersion": "1.1",
-      "requestMetadata": {
-        "isLongRunningOperation": false
-      }
-    },
-    {
-      "id": {
-        "endpoint": "/api/product/{id}",
-        "method": "Delete"
-      },
-      "method": "Delete",
-      "basePath": "",
-      "path": [
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "api"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "product"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Fuzzable": {
-            "primitiveType": "Int",
-            "defaultValue": "1"
-          }
-        }
-      ],
-      "queryParameters": [
-        [
-          "Schema",
-          {
-            "ParameterList": []
-          }
-        ]
-      ],
       "bodyParameters": [
         [
           "Schema",
@@ -520,20 +367,6 @@
           }
         ]
       ],
-      "headerParameters": [
-        [
-          "Schema",
-          {
-            "ParameterList": []
-          }
-        ],
-        [
-          "DictionaryCustomPayload",
-          {
-            "ParameterList": []
-          }
-        ]
-      ],
       "token": "Refreshable",
       "headers": [
         [
@@ -542,7 +375,7 @@
         ],
         [
           "Host",
-          "localhost:8080"
+          "wizard-world-api.herokuapp.com"
         ]
       ],
       "httpVersion": "1.1",
@@ -552,34 +385,21 @@
     },
     {
       "id": {
-        "endpoint": "/api/products",
+        "endpoint": "/Houses/{id}",
         "method": "Get"
       },
       "method": "Get",
-      "basePath": "",
       "path": [
         {
           "Constant": [
             "String",
-            "/"
+            "Houses"
           ]
         },
         {
-          "Constant": [
-            "String",
-            "api"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "/"
-          ]
-        },
-        {
-          "Constant": [
-            "String",
-            "products"
+          "Fuzzable": [
+            "Uuid",
+            "566048da-ed19-4cd3-8e0a-b7e0e1ec4d72"
           ]
         }
       ],
@@ -599,15 +419,64 @@
           }
         ]
       ],
-      "headerParameters": [
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "wizard-world-api.herokuapp.com"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/Ingredients",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "Ingredients"
+          ]
+        }
+      ],
+      "queryParameters": [
         [
           "Schema",
           {
-            "ParameterList": []
+            "ParameterList": [
+              [
+                "Name",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
           }
-        ],
+        ]
+      ],
+      "bodyParameters": [
         [
-          "DictionaryCustomPayload",
+          "Schema",
           {
             "ParameterList": []
           }
@@ -621,7 +490,362 @@
         ],
         [
           "Host",
-          "localhost:8080"
+          "wizard-world-api.herokuapp.com"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/Ingredients/{id}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "Ingredients"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "Uuid",
+            "566048da-ed19-4cd3-8e0a-b7e0e1ec4d72"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "wizard-world-api.herokuapp.com"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/Spells",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "Spells"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "Name",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "Type",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        {
+                          "Enum": [
+                            "String",
+                            [
+                              "None",
+                              "Charm",
+                              "Conjuration",
+                              "Spell",
+                              "Transfiguration",
+                              "HealingSpell",
+                              "DarkCharm",
+                              "Jinx",
+                              "Curse",
+                              "MagicalTransportation",
+                              "Hex",
+                              "CounterSpell",
+                              "DarkArts",
+                              "CounterJinx",
+                              "CounterCharm",
+                              "Untransfiguration",
+                              "BindingMagicalContract",
+                              "Vanishment"
+                            ],
+                            null
+                          ]
+                        },
+                        "None"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "Incantation",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "wizard-world-api.herokuapp.com"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/Spells/{id}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "Spells"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "Uuid",
+            "566048da-ed19-4cd3-8e0a-b7e0e1ec4d72"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "wizard-world-api.herokuapp.com"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/Wizards",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "Wizards"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": [
+              [
+                "FirstName",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ],
+              [
+                "LastName",
+                {
+                  "LeafNode": {
+                    "name": "",
+                    "payload": {
+                      "Fuzzable": [
+                        "String",
+                        "fuzzstring"
+                      ]
+                    },
+                    "isRequired": true,
+                    "isReadOnly": false
+                  }
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "wizard-world-api.herokuapp.com"
+        ]
+      ],
+      "httpVersion": "1.1",
+      "requestMetadata": {
+        "isLongRunningOperation": false
+      }
+    },
+    {
+      "id": {
+        "endpoint": "/Wizards/{id}",
+        "method": "Get"
+      },
+      "method": "Get",
+      "path": [
+        {
+          "Constant": [
+            "String",
+            "Wizards"
+          ]
+        },
+        {
+          "Fuzzable": [
+            "Uuid",
+            "566048da-ed19-4cd3-8e0a-b7e0e1ec4d72"
+          ]
+        }
+      ],
+      "queryParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "bodyParameters": [
+        [
+          "Schema",
+          {
+            "ParameterList": []
+          }
+        ]
+      ],
+      "token": "Refreshable",
+      "headers": [
+        [
+          "Accept",
+          "application/json"
+        ],
+        [
+          "Host",
+          "wizard-world-api.herokuapp.com"
         ]
       ],
       "httpVersion": "1.1",
